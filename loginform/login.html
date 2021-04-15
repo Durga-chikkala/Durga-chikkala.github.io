@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="details">
+        <h1>Welcome</h1>
+        <span>username:</span>
+        <input type="text" placeholder="Enter username" title="username" required> <br><br>
+        <span>Password:</span>
+        <i class="fa fa-eye"  onclick="Toggle()" aria-hidden="true"></i>
+        <input type="password" placeholder="Enter password" id="password"  title="Enter correct password" required>
+        <a href="#">Forgot Password</a>
+        <button >Login</button>
+        <div class="image">
+            <h2>Login with</h2>
+            <ul>
+                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            </ul>
+            <a href="form.html">Don`t have an account</a>
+        </div>
+    </div>
+    <script>
+        function Toggle()
+        {
+            var a;
+            a=document.getElementById('password');
+            if(a.type==="password" && a.value!=""){
+                a.type="text";
+            }
+            else{
+                a.type="password";
+            }
+        }
+        function facebook(){
+
+        }
+
+            
+           
+        
+    </script>
+   
+    
+</body>
+</html>

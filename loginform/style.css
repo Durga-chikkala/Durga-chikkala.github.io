@@ -36,15 +36,16 @@ body{
 }
 .details .fa-eye{
     position: absolute;
-    left:82%;
+    left:88%;
     top:32.5%;
-    transform: translate(-82%,-32.5%);
+    transform: translate(-88%,-32.5%);
     cursor: pointer;
 }
 .details input{
     font-size: 16px;
     position: absolute;
-    left: 25%;
+    left: 55%;
+    transform: translateX(-55%);
     background:
 }
 .details a{
@@ -73,12 +74,15 @@ body{
 .details button:hover{
     background-color: #f44332;
 }
-.image h2{
+.details h2{
     font-size:16 px;
     position: absolute;
     left:45%;
-    padding-top: 190%;
-    transform: translate(-35%,-70%);
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform: translateX(-45%);
 }
 .image {
     width: auto;
@@ -130,14 +134,26 @@ body{
     .details .fa-eye{
         position: absolute;
         left:90%;
-        top:32.5%;
+        top:27%;
         align-items: center;
-        transform: translate(-90%,-32.5%);
+        transform: translate(-90%,-27%);
         cursor: pointer;
     }
     .image h2{
         padding-top: 250%;
 
     }
+    .image ul {
+        display: inline-flex;
+        font-size: 20px;
+        justify-content: space-between;
+       
+        position: absolute;
+        left: 25%;
+        top:85%;
+        transform: translate(-25%,-85%);
+    
+    }
+    
 
 }

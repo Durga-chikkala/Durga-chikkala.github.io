@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color generator</title>
+    <link rel="stylesheet" href="colorcode.css">
+</head>
+<body>
+    <div class='box'>
+        <div class="code">
+            <div id="color1" class="color">#ffffff
+            </div>
+            <hr>
+            <div class="btn">
+            <button onclick="generate();">Generate</button>
+        </div>
+
+        </div>
+    </div>
+    <script>
+        function generate()
+{
+        var colorcode=(Math.floor(Math.random()*16777216)).toString(16);
+        document.body.style.backgroundColor="#"+colorcode;
+        var text=document.getElementById("color1");
+        text.innerHTML="#"+colorcode;
+}
+    </script>
+</body>
+</html>

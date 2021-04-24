@@ -1,0 +1,26 @@
+.custom{
+    padding:4%;
+    text-align:center;
+    
+}
+.menu{
+    width:35px;
+    height:4px;
+    margin: 3px 0px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color:darksalmon;
+    transform: translate(1050px,-120px);
+    color:black;
+}
+#myUL{
+    cursor: pointer;
+    color: black;
+}
+#full{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/793/103/631/typography-quote-bokeh-motivational-wallpaper-preview.jpg");
+    background-size: cover;
+    color:white;
+    
+}

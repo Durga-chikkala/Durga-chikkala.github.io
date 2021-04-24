@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hack.css">
+</head>
+<body>
+    <div  onclick="toggleSidebar()" class="button">
+        <img src="https://static.thenounproject.com/png/424912-200.png"/ width=40px>
+    </div>
+    <div class="sidebar">
+        <div onclick="toggleSidebar()" class="close">
+            <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357955.jpg" width=30px alt="">
+        </div>
+        <div class="text">Profile</div>
+        <a href="education.html"><div class="text">Education</div></a>
+        <div class="text">Query</div>
+        <div class="text">Contact</div>
+    </div>
+    <div class="name">
+    <div class="word">
+        <span>D</span>
+        <span>u</span>
+        <span>r</span>
+        <span>g</span>
+        <span>a</span>
+    </div>
+    <div class="word">
+        <span>C</span>
+        <span>h</span>
+        <span>i</span>
+        <span>k</span>
+        <span>k</span>
+        <span>a</span>
+        <span>l</span>
+        <span>a</span>
+    </div>
+</div>
+<div class="study">
+    <h1>Education</h1>
+<div class="row">
+    <div class="column">
+        <h2>SSC</h2>
+        <p>Completed SSC in:<br>
+            Sri Chaitanya School<br>
+            2017 (Batch)<br>
+            Scored:10 GPA<br>
+            TUNI 533401<br>
+
+            
+        </p>
+    </div>
+    <div class="column">
+        <h2>INTERMEDIATE</h2>
+        <p>Completed Inter in:<br>
+            Sri Chaitanya College<br>
+            2017-19 (Batch)<br>
+            Scored:9.69 GPA<br>
+            Vishakhapatnam<br>
+
+            
+        </p>
+    </div>
+    <div class="column">
+        <h2>B.TECH</h2>
+        <p>Completed B.Tech in:<br>
+            Aditya College of engineering and Technology<br>
+            2019-23 (Batch)<br>
+            Scored:8.2 GPA<br>
+            Surampallem<br>
+
+            
+        </p>
+    </div>
+</div>
+</div>
+ <div class="achievements">
+     <h1>Achievements</h1>
+     <h2><u>Created WebPages</u></h2>
+     <div class="row">
+         <div class="column1">
+             <h3>TO DO List</h3>
+             <p>This webpage is used to write the works you want to do .<br>
+                You can add your day activity and close it after completion <br>
+                of that Task.
+                This is Designed using HTML,Css,JavaScript .<br><br><Br></p>
+                
+                <div class="tag">
+                <a href="todo.html"><pre>  Todolist</pre></a>
+            </div>
+        </div>
+        <div class="column1">
+            <h3>Color Code Generator</h3>
+            <p>This webpage is used to Generate Colorcodes.<br>
+                You can get random Color codes by clicking generate<br>
+                button and you get the color code and also color in<br>
+                background
+                This is Designed using HTML,Css,JavaScript .<br><br><Br>
+                </p>
+                <div class="tag">
+                <a href="colorcode.html"><pre>  ColorGenerator</pre></a>
+            </div>
+        </div>
+         </div>
+         <div class="column1">
+            <h3>Otp Page</h3>
+            <p>This webpage is used to Take otp from the user<br>
+                User should enter otp that was sent to the mobile<br>
+                by clicking verify
+                button and if the entered otp is correct<br>
+                then it will direct to another page
+                This is Designed using HTML,Css .<br><br><Br>
+                </p>
+                <div class="tag">
+                <a href="otp.html"><pre>  Otp page</pre></a>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <div class="card">
+            <img src="durga.jpg.jpeg" alt="Durga Chikkala">
+            <div class="side">
+                <p>Durga <br>Chikkala</p>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        function toggleSidebar(){
+            const sidebar=document.querySelector(".sidebar");
+            sidebar.classList.toggle("active");
+                
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+.sidebar{
+    height:30vh;
+    width: 120px;
+    background:url("https://c4.wallpaperflare.com/wallpaper/674/553/115/rose-bud-petals-water-drops-black-background-wallpaper-thumb.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+.button{
+    cursor: pointer;
+    
+}
+.sidebar.active{
+    transform: translateX(0%);
+}
+.close{
+    position: absolute;
+    top:0px;
+    
+    left:0px;
+    cursor: pointer;
+}
+.text{
+    cursor: pointer;
+    padding: 5px;
+    color:white;
+    background: transparent;
+    font-weight: 100px;
+    
+}
+.text:hover{
+    box-sizing: content-box;
+    border:2px solid black ;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 2px  white;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #8db596;
+    justify-content: center;
+  
+    align-items: center;
+}
+.word{
+    color:#8db596;
+    font-weight: 900;
+    line-height: 45px;
+}
+.word span{
+    font-size: 4rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+}
+.html{
+    scroll-behavior: smooth;
+}
+@keyframes move {
+    0%{
+        transform: translate(-30%,0%);
+    }
+    25%{
+        transform: translate(0%,0%);
+    }
+    50%{
+        text-shadow: 0px 25px 50px rgb(0, 0,0,0.9);
+    }
+    75%{
+        transform:translate(0%,0%)
+    }
+
+    100%{
+        transform: translate(30%,0%);
+    }
+}
+.word span:nth-child(2){
+    animation-delay: .5s;
+}
+.word span:nth-child(3){
+    animation-delay: 1s;
+}
+word span:nth-child(4){
+    animation-delay: 1.5s;
+}
+.study{
+    margin:auto;
+    width:80%;
+    text-align: center;
+
+    
+  
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.row{
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.column{
+    flex-basis: 25%;
+    border: 2px solid white;
+    padding: 20px 10px;
+    margin: 12px 20px;
+    background:marun;
+    flex-direction: row;
+    box-sizing: border-box;
+    transition: 0.6s;
+    box-shadow: 0px 0px 20px rgb(0, 0,0,0.2);
+    cursor: pointer;
+}
+.column:hover{
+   font-size: large;
+}
+.achievements{
+    width:80%;
+    margin:auto;
+   
+}
+.achievements h2{
+    margin-top:70px ;
+    text-align: center;
+   
+}
+.column1 h3{
+    text-align: center;
+}
+.column1{
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 0px 0px 20px rgb(0,0,0,.2);
+    border: 2px solid white;
+    margin-bottom: 100px;
+    font-weight: bolder;
+}
+
+.column1 .tag{
+    
+    border: 2px solid black;
+    text-decoration: none;
+    display: absolute;
+    left:50%;
+    text-align: center;
+    width:40%;
+    margin:auto;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+    
+}
+.column1 a{
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.column1 .tag:hover{
+    background-color: #f44332;
+  
+  transition:1s;
+}
+.contact{
+    width:80%;
+    margin: auto;
+}
+.card{
+    position: absolute;
+    top:460%;
+    left:50%;
+    transform: translate(-50%,-460%);
+    width:250px;
+    height:300px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.4);
+}
+.card img{
+    width:250px;
+    position: absolute;
+    z-index: 10;
+}
+.side{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 25%;
+    height: 100%;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 21%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgb(0,0,0,0.5);
+
+}
+.card:hover .side{
+    transform: translateX(103%);
+}
+.side p{
+    position: absolute;
+    top:10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.side i{
+    margin: 10px;
+    cursor: pointer;
+}
+.fa-instagram{
+    color:#c32aa3;
+}
+.fa-facebook{
+    color: #1877f2;
+}
+.fa-github{
+    color:#00000;
+}
+.fa-envelope{
+    color:coral;
+}
+.course{
+    width:60%;
+    margin: auto;
+    padding: 0;
+  
+}
+.row2{
+    display: flex;
+  
+
+}
+.layer{
+    background:transparent;
+    top:0;
+    left:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color:white
+}
+.layer:hover{
+    background: #f44332;
+    color:white;
+}
+.layer h2{
+    width: 100%;
+    position:absolute;
+    font-weight: 500px;
+    font-size: 26px;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+
+}
+.layer:hover h2{
+    bottom:49%;
+    opacity: 1;
+
+}
+.col{
+    flex-basis: 50%;
+}
+
+  
+    

@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div  onclick="toggleSidebar()" class="button">
+    <div  onclick="toggleSidebar()"  class="button">
         <img src="https://static.thenounproject.com/png/424912-200.png"/ width=40px>
     </div>
-    <div class="sidebar">
-        <div onclick="toggleSidebar()" class="close">
+    <div class="sidebar"  onmouseout="mOut(this)">
+        <div onclick="toggleSidebar()"  onmouseover="mOver(this)" class="close">
             <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357955.jpg" width=30px alt="">
         </div>
-        <div class="text">Profile</div>
+        <div class="text"><a href="index.html"> Home</a></div>
         <a href="education.html"><div class="text">Education</div></a>
-        <div class="text">Query</div>
-        <div class="text">Contact</div>
+        <div class="text"><a href="query.html">Query</a></div>
+        <div class="text"><a href="contact.html">Contact</a></div>
     </div>
     <div class="name">
     <div class="word">
@@ -44,6 +44,7 @@
         <span>a</span>
     </div>
 </div>
+
 <div class="study">
     <h1>Education</h1>
 <div class="row">
@@ -124,15 +125,15 @@
             </div>
         </div>
     </div>
-    <div class="contact">
-        <h1>Contact Me</h1>
+    <h1>Contact </h1>
+    <div class="contact"> 
         <div class="card">
             <img src="durga.jpg.jpeg" alt="Durga Chikkala">
             <div class="side">
                 <p>Durga <br>Chikkala</p>
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/durga__chikkala/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/durga.chikkala.5/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                <a href="https://github.com/Durgachikkala-programmer"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             </div>
         </div>
@@ -145,6 +146,7 @@
                 
             
         }
+        
     </script>
 </body>
 </html>

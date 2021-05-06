@@ -168,7 +168,7 @@ h1{
     display: absolute;
     left:50%;
     text-align: center;
-    width:45%;
+    width:50%;
     margin:auto;
     cursor: pointer;
     background: transparent;
@@ -188,17 +188,21 @@ h1{
 .contact{
     width:80%;
     position: absolute;
-    
+    font-weight: bolder;
+   
     margin: auto;
-    height: 40vh;
+    height: 100vh;
 }
 .contact .card{
-    width:230px;
+    width:238px;
     height:270px;
     position: absolute;
-    left:50%;
-    bottom: 10px;
+    left:60%;
+    border: 2px solid black;
+    
+    top:10px;
     transform: translateX(-50%);
+    border-radius: 50%;
 
     box-sizing: border-box;
     box-shadow: 0px 0px 10px rgb(0,0,0,0.4);
@@ -206,24 +210,34 @@ h1{
 .card img{
     width:230px;
     z-index: 10;
+    border-radius: 50%;
+    height: 270px;
+
+  
     position: absolute;
 }
 .side{
     position: absolute;
     top:0;
     right:0;
-    width: 26%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 35%;
+    border-radius: 25%;
     height: 100%;
+    display: none;
     transition: all 0.5s;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction:column;
+    flex-basis: 51%;
     box-sizing: border-box;
     box-shadow: 0px 0px 15px rgb(0,0,0,0.5);
 
 }
 .card:hover .side{
-    transform: translateX(103%);
+    transform: translateX(133%);
 }
 .side p{
     position: absolute;
@@ -323,13 +337,21 @@ h1{
         font-size: 32px;
     }
 }
-.email textarea{
-    width: 50%;
-    height: 40vh;
+.email input{
+    width: 40%;
+    height: 10vh;
     position: absolute;
     left:50%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 24px;
     transform: translateX(-50%);
     
+}
+.email input:hover{
+    border-bottom-color:#1877f2;
 }
 .email{
     text-align: center;
@@ -347,4 +369,18 @@ h1{
     text-align: center;
   
    
+}
+.answer input{
+    width: 40%;
+    height: 10vh;
+    position: absolute;
+    left:50%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 24px;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    
 }

@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-size: 64px;
+    vertical-align: middle;
+    text-shadow: 2px 3px 2px blue;
+}

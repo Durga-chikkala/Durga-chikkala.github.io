@@ -1,0 +1,141 @@
+.heading h1{
+    position: absolute;
+    left:30px;
+    top:20px;
+    font-size: 24px;
+    
+  
+}
+
+.heading h3{
+    position: absolute;
+    left:32px;
+    top:55px;
+    font-weight:lighter;
+    font-size: 14px;
+}
+.heading a{
+    position: absolute;
+    left:98px;
+    color:blue;
+    top:68px;
+    font-weight: lighter;
+    font-size: 14px;
+    text-decoration: none;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100px;
+}
+.inputs input{
+    width:150%;
+    height: 30px;
+    margin:12px;
+    
+    font-size: 15px;
+    border:none;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: rgb(168, 209, 233);
+    opacity:0.9 ;
+}
+.inputs input:focus{
+    background-color: rgb(97, 197, 255);  
+}
+.inputs input::placeholder{
+    font-weight: bold;
+    color:black;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+.login a{
+    position: absolute;
+    top:220px;
+    color:blue;
+    left:32px;
+}
+.login button{
+    position: absolute;
+    top:215px;
+    right:30px;
+    background-color:transparent;
+    padding:5px;
+    width:100px;
+    transition:1s;
+    font-weight: bolder;
+    border-radius: 25px;
+}
+.login button:hover{
+    background-color: rgb(50, 101, 241);
+}
+.or{
+    position: absolute;
+    top:276px;
+    right:160px;
+    background-color: white;
+    font-size: 22px;
+}
+.options{
+    display:flex;
+    flex-direction: column;
+}
+.google{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    bottom:260px;
+    height:50px;
+    width:90%;
+    border-radius: 10px;
+    display:flex;
+    left:20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.google:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.google img{
+    width:30px;
+    background-color: white;
+}
+.facebook{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    bottom:180px;
+    height:50px;
+    width:90%;
+    border-radius: 10px;
+    display: flex;
+    left:20px;
+    justify-content: center;
+    align-items: center;
+}
+.facebook img{
+    width:30px;
+    background-color: white;
+
+}
+.number{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    bottom:100px;
+    height:50px;
+    width:90%;
+    border-radius: 10px;
+    display: flex;
+    left:20px;
+    justify-content: center;
+    align-items: center;
+}
+.number img{
+    width:30px;
+    background-color: white;
+}

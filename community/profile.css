@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    height: 50vh;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+   background-color:#AEEEEE;
+}
+.pic{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:2px solid black;
+    position: absolute;
+    top:30px;
+    left:135px;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:120px;
+    left:120px;
+
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.items{
+    display:flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top:200px;
+    left:55px;
+    margin:10px;
+
+}
+.option{
+    margin:15px;
+}
+.notification{
+    display: flex;
+    justify-content: space-between;
+}
+.settings{
+    width:90%;
+    margin-left: 14px;
+    margin-top: 8px;
+}
+.accounts{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.setting{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.report{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.help{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    padding:5px;
+    width:90px;
+    position: absolute;
+    left:130px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    border:none;
+    transition: 0.7s;
+
+}
+button:focus{
+    background-color: crimson;
+}
+.sys{
+    font-weight: bolder;
+}

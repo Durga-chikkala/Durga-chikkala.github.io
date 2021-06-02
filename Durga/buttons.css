@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+}
+.header{
+    text-align: center;
+    height:100vh;
+    width:100%;
+    display: flex;
+    background: skyblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header:hover{
+  transform: rotate3d(360deg);
+
+}
+.shapes .circle{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background: green;
+  position:absolute;
+  top:60%;
+  left:90%;
+  transform: translate(-90%,-60%);
+  animation: move 5s linear infinite;
+  transform-origin: center;
+}
+@keyframes move{
+
+  100% {transform: rotate(360deg);
+  width:60px;
+height:60px;}
+
+}
+.shapes .circle1{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background: BLUE;
+  position:absolute;
+  transform: translate(-74%,-70%);
+  top:70%;
+  left:75%;
+  animation: move 5s linear infinite;
+  transform-origin: center;
+
+}
+.shapes .circle2{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background: red;
+  position:absolute;
+  top:80%;
+  left:90%;
+  transform: translate(-90%,-70%);
+  animation: move 5s linear infinite;
+  transform-origin: center;
+
+}
+
+
+.navigation{
+  position: fixed;
+  top:0px;
+  border:2px solid black;
+  width:100%;
+  height:50px;
+  background: black;
+  color:white;
+
+}
+.navigation ol li:hover{
+  animation: colors 5s ease-in;
+}
+@keyframes colors {
+  25%{
+    background: orange;
+  }
+  50%{
+    background: blue;
+  }
+  75%{
+    background: green;
+  }
+  100%{
+    background-color: red;
+  }
+}
+.navigation ol{
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ol li{
+  padding: 10px 20px;
+  transition:0.3s;
+  flex-basis: 51%;
+  text-align: center;
+}
+.navigation ol li:hover{
+  border:2px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+h1{
+    font-size: 64px;
+
+}
+h3{
+    font-size: 18px;
+}
+.button{
+  width: 80%;
+  margin: auto;
+  height:100vh;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+.colum1{
+   width:30%;
+   height:250px;
+   margin-top: 50px;
+   box-sizing: border-box;
+  box-shadow: 0px 0px 5px black;
+  transition: 0.5s;
+  }
+  .colum1:hover{
+    box-shadow: 0px 0px 10px black;
+  }
+ .text{
+  height: 150px;
+  color:green;
+  width:250px;
+  line-height: 20px;
+}
+.button1{
+  text-align: center;
+
+}

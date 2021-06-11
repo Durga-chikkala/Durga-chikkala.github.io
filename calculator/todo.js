@@ -1,6 +1,6 @@
 function back()
 {
-    location.replace("calculator.html");
+    location.replace("index.html");
 }
 var a,b,c,d,flag=true;
 function change()

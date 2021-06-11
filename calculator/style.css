@@ -64,8 +64,8 @@ img{
     width:25px;
     border-radius: 50%;
     position: absolute;
-    bottom:10px;
-    left:50%;
+    top:20px;
+    right:20px;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px black;
     transform: translateX(-50%);

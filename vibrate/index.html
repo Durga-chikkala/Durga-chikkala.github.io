@@ -12,6 +12,7 @@
         navigator.vibrate=navigator.vibrate || navigator.webkitVibrate ||navigator.mozVibrate;
         function notify()
         {
+            navigator.vibrate([10000,2000,4000]);
             if('Notification' in window)
             {
                 if(Notification.permission!== "denied")
@@ -21,7 +22,7 @@
                     
                     body : "You are Hacked......."};
                     let n=new Notification(title,Option);
-                    navigator.vibrate([10000,2000,4000]);
+                    
                 }
 
             }

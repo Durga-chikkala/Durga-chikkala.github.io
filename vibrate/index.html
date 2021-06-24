@@ -12,7 +12,19 @@
         navigator.vibrate=navigator.vibrate || navigator.webkitVibrate ||navigator.mozVibrate;
         function notify()
         {
-            navigator.vibrate([4000,1000,2000,1000,10000]);
+            if('Notification' in window)
+            {
+                if(Notification.permission!== "denied")
+                {
+                    let title="Durga Chikkala";
+                    let Option={(
+                    
+                    body:"You are Hacked......."};
+                    let n=new Notification(title,Option);
+                    navigator.vibrate([10000,2000,4000]);
+                }
+
+            }
         }
     </script>
 </body>

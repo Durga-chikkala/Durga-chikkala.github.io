@@ -77,10 +77,11 @@ html{
 }
 .ago{
     height:20px;
-    width:90px;
+    width:85px;
     background-color:#ffffff;
     position: absolute;
     padding: 5px 5px;
+    font-size: 14px;
     background: rgba(255,255,255,0.5);
     backdrop-filter: blur(5px);
     margin-left: 5px;

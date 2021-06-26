@@ -18,7 +18,11 @@ function mOut1(obj)
     document.querySelector(".cat").style.display="none";
 
 }
-
+function togglebar()
+{
+    var k=document.querySelector(".mobilenav");
+    k.classList.toggle("active");
+}
 
 
 

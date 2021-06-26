@@ -439,7 +439,7 @@ html{
     .row1 .column1 .quiz ul{
         display: flex;
         justify-content: space-between;
-        width:80%;
+        width: 80%;
        
     
     }

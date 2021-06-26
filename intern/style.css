@@ -16,7 +16,7 @@ html{
     box-shadow: 0 0 2px black;
     width:200px;
     height:120px;
-    position: absolute;
+    position: fixed;
     background-color: white;
     left:45%;
     top:41px;
@@ -40,7 +40,7 @@ html{
     box-shadow: 0 0 2px black;
     width:300px;
     height:400px;
-    position: absolute;
+    position: fixed;
     background-color: white;
     left:40%;
     top:41px;
@@ -109,6 +109,44 @@ html{
     cursor: pointer;
     justify-content: space-between;
    
+}
+.loginpage{
+    width:100%;
+    height: 50vh;
+    display: flex;
+    flex-direction:column;
+
+}
+.loginpage img{
+    
+    width:40px;
+    height:40px;
+    margin: auto;
+}
+.loginpage h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.loginpage input{
+    border-radius: 5px;
+    width:50%;
+    height:30px;
+    padding:10px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px black;
+    border:none;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.loginpage a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    margin: auto;
+}
+.loginpage button{
+    width:
 }
 .logo img{
     width:40px;
@@ -412,7 +450,7 @@ html{
         box-shadow: 0 0 2px black;
         width:300px;
         height:120px;
-        position: absolute;
+        position: fixed;
         background-color: white;
         left:45%;
         top:60px;
@@ -445,7 +483,7 @@ html{
         box-shadow: 0 0 2px black;
         width:300px;
         height:400px;
-        position: absolute;
+        position: fixed;
         background-color: white;
         left:40%;
         top:60px;

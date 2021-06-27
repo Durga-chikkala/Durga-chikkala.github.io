@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizony.com</title>
+    <link rel="shortcut icon" href="https://www.quizony.com/static/img/quizony_logo_black.png">
+    <script src="quiz.js"></script>
+</head>
+<body>
+  <!--  <div class="loginpage">
+        <img src="https://i.pinimg.com/280x280_RS/2b/c2/b0/2bc2b04b34fd3ce064ea32c694ed2368.jpg" alt="">
+        <h1>Welcome to Quizony</h1>
+        <input type="text" placeholder=" Username or email">
+        <input type="password" placeholder=" Password">
+        <a href="#">Forgot Password</a>
+        <button>Log in</button>
+    </div>-->
+    <div onmouseout="mOut1(this)" onmouseover="mOver1(this)" id="cat" class="cat">
+        <div class="quizzes">
+            <h3>Quizzes</h3>
+            <br>
+            <ul >
+                <li>All</li>
+                <li>Top</li>
+                <li>Users Quizzes</li>
+                <li>Couples</li>
+                <li>Trivia</li>
+                <li>sport</li>
+                <li>Music</li>
+            </ul>
+        </div>
+        <div class="popular">
+            <h3>Popular Tags</h3>
+            <br>
+            <ul >
+                <li>Girls</li>
+                <li>Friends</li>
+                <li>Fun</li>
+                <li>Lifestyle</li>
+                <li>Food</li>
+            </ul>
+        </div>
+    </div>
+    <div onmouseout="mOut(this)" onmouseover="mOver(this)" id="create" class="create">
+        <ul >
+            <li>Create Quiz</li>
+            <li>Create Story</li>
+            <li>How it Works</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="mobilenav" >
+        <ul >
+            <li id="category" onmouseover="mOver1(this)" onmouseout="mOut1(this)">Categories</li>
+            <li id="create" onmouseover="mOver(this)" onmouseout="mOut(this)" >Create</li>
+            <li>Waiting Room</li>
+            <li>Our Story</li>
+            <li><i class="fas fa-search"></i></li>
+            <li>Sign up</li>
+            <li>Log in</li>
+        </ul>
+    </div>
+   
+    <div class="nav" id="navigator">
+        <div class="logo">
+            <img src="https://i.pinimg.com/280x280_RS/2b/c2/b0/2bc2b04b34fd3ce064ea32c694ed2368.jpg" alt="">
+            <h4>Quizony</h4>
+        </div>
+        <div class="option">
+            <ul >
+                <li id="category" onmouseover="mOver1(this)" onmouseout="mOut1(this)">Categories</li>
+                <li id="create" onmouseover="mOver(this)" onmouseout="mOut(this)" >Create</li>
+                <li>Waiting Room</li>
+                <li>Our Story</li>
+                <li><i class="fas fa-search"></i></li>
+            </ul>
+        </div>
+        <div class="menu" onclick="togglebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="login">
+            <ul>
+                <li>Sign up</li>
+                <li>Log in</li>
+            </ul>
+        </div>   
+    </div>
+    <div class="body">
+        <div class="side1">
+        <h1>Quizzes For Women</h1>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-s-my-aesthetic/what-s-my-aesthetic-small.jpg">
+                <div class="text">
+                    <h3>What's My Aesthetic?</h3>
+                    <p>What is my aesthetic? Answer now and our aesthetic finder will tell you whether you're glam, spoo...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/users-quizzes/are-you-a-country-girl-or-a-city-girl/are-you-a-country-girl-or-a-city-girl-small.jpg">
+                <div class="text">
+                    <h3>Are You A Country Girl Or A City Girl?</h3>
+                    <p>This quiz will prove if you are a True Country Girl or a True City Girl. Answer the questions and have fun...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/can-we-guess-your-age/can-we-guess-your-age-small.jpg">
+                <div class="text">
+                    <h3>Can We Guess Your Age?</h3>
+                    <p>It is getting increasingly challenging to distinguish people's age in today's times. Children are...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+                
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-should-i-wear-today/what-should-i-wear-today-small.jpg">
+                <div class="text">
+                    <h3>What Should I Wear Today?</h3>
+                    <p>No two human beings are alike. We all have a unique style and swagger that sets us apart from one...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/are-you-a-real-witch/are-you-a-real-witch-small.jpg">
+                <div class="text">
+                    <h3>Witch Test: Are You A Real Witch?</h3>
+                    <p>Are you a real witch? Practicing magic and harnessing the power of the stars takes patience and t...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-haircut-suits-you-best/what-haircut-suits-you-best-small.jpg">
+                <div class="text">
+                    <h3>What Haircut Suits You Best?</h3>
+                    <p>Are you thinking of changing your hairstyle? You could end up wearing your bad decision on your h...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="ago">5 month ago</div> 
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/users-quizzes/what-length-hair-should-you-have/what-length-hair-should-you-have-small.jpg">
+                <div class="text">
+                    <h3>What Length Hair Should You Have?</h3>
+                    <p>Do you have annoyingly long hair or boring short hair or too much in-between? Take this quiz to find out..</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">6 month ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/users-quizzes/what-is-your-aesthetic-4/what-is-your-aesthetic-4-small.jpg">
+                <div class="text">
+                    <h3>What Is Your Aesthetic? No. 4</h3>
+                    <p>Have you ever wondered which your aesthetic is? Take this quiz to find out! You won't be disappoint...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/users-quizzes/are-you-hot-cute-or-pretty/are-you-hot-cute-or-pretty-small.jpg">
+                <div class="text">
+                    <h3>Are You Hot, Cute, Or Pretty?</h3>
+                    <p>Take this quiz to find out if you are hot, cute or pretty.Beauty is something which is most important ..</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="ago">1 year ago</div> 
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/users-quizzes/what-shoe-are-you-2/what-shoe-are-you-2-small.jpg">
+                <div class="text">
+                    <h3>What Shoe Are You? No. 2</h3>
+                    <p>Find out what shoe you were and for the next tell you will be able to buy a perfect,attractive and nice shoe ....</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-kind-of-grandma-are-you/what-kind-of-grandma-are-you-small.jpg">
+                <div class="text">
+                    <h3>What Kind Of Grandma Are You?</h3>
+                    <p>Grandmothers are a gift, from the ones with crazy stories to those who will bake you up a storm and blessed to have them..</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/should-i-dye-my-hair/should-i-dye-my-hair-small.jpg">
+                <div class="text">
+                    <h3>Should I Dye My Hair?</h3>
+                    <p>Wondering if you should take the leap and dye your hair? Then it's time you took this insightful and...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/am-i-wife-material/am-i-wife-material-small.jpg">
+                <div class="text">
+                    <h3>Am I Wife Material?</h3>
+                    <p>Have you ever wondered why so many of the guys you dated in the past didn't find you worthy of co...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/should-i-have-long-or-short-hair/should-i-have-long-or-short-hair-small.jpg">
+                <div class="text">
+                    <h3>Should I Have Long Or Short Hair?</h3>
+                    <p>Thinking about growing your hair out or chopping it off? Should your hair be long, short, or med...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/signs-he-likes-me/signs-he-likes-me-small.jpg">
+                <div class="text">
+                    <h3>Signs He Likes Me</h3>
+                    <p>Some people say it is the most difficult question in the universe to answer. Does he like me? And will...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/how-many-kids-should-i-have/how-many-kids-should-i-have-small.jpg">
+                <div class="text">
+                    <h3>How Many Kids Should I Have?</h3>
+                    <p>Deciding how many kids you should have throughout the course of your life can be a difficult deci...</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-kind-of-girlfriend-are-you/what-kind-of-girlfriend-are-you-small.jpg">
+                <div class="text">
+                    <h3>What Kind of Girlfriend Are You?</h3>
+                    <p>Are you easy to get along with, or too pushy? By answering these questions, you can see what kind of girlfriend you are.</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+                
+            </div>
+            
+            <div class="column"> 
+                <div class="ago">1 year ago</div>
+                <div class="quizbox">Quiz</div>
+                <img src="https://www.quizony.com/what-kind-of-woman-are-you/what-kind-of-woman-are-you-small.jpg">
+                <div class="text">
+                    <h3>What Kind of Woman Are You?</h3>
+                    <p>A simple quiz to find out what kind of woman are you.ake this quiz to find out what kind of woman you are!</p>
+                </div>
+                <div class="likes">
+                    <i class="fas fa-list-ul">29</i>
+                    <i class="far fa-eye">358899</i>
+                    <i class="far fa-thumbs-up">142</i>
+                    <i class="fas fa-user">eden</i>
+                </div>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="side2">
+        <div class="row1">
+            <div class="column1">
+                <div class="all">
+                    <ul>
+                        <li>All</li>
+                        <li>Quizzes</li>
+                        <li>Stories</li>
+                        <li>Top Quizzes</li>
+                        <li>Waiting Room</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="quiz">
+                    <h2>Quiz Categories</h2>
+                    <ul>
+                       <li>Women</li>
+                       <li>Men</li>
+                       <li>Couples</li>
+                       <li>Adults</li>
+                    </ul>
+                    <ul>
+                        <li>Kids</li>
+                        <li>Living</li>
+                        <li>Personality</li>
+                        <li>Hobby</li>
+                    </ul>
+                   
+                    <ul>
+                        <li>Relationship</li>
+                        <li>Annimals</li>
+                        <li>Travel</li>
+                        <li>Film</li>
+                    </ul>
+                    <ul>
+                        <li>Politics</li>
+                        <li>History</li>
+                        <li>Sport</li>
+                        <li>Girls</li>
+                    </ul>
+                    <ul>
+                        <li>Trivia</li>
+                        <li>Health</li>
+                        <li>Teens</li>
+                        <li>Food</li>
+                    </ul>
+                    <ul>
+                        <li>Music</li>
+                        <li>Technology</li>
+                        <li>Education</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>Career</li>
+                        <li>Entertainment</li>
+                        <li>other</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="column1">
+                <h3>Top Quizzes</h3>
+                <div class="top">
+                    <ul>
+                        <li>
+                            <img src="https://www.quizony.com/what-should-you-eat-tonight/what-should-you-eat-tonight-small.jpg">
+                            <p>Are You on Santa's Naughty or Nice List?</p>
+                        </li>
+                        <li>
+                            <img src="https://www.quizony.com/tattoo-generator/tattoo-generator-small.jpg">
+                            <p>Tattoo Generator</p>
+                        </li>
+                        <li>
+                            <img src="https://www.quizony.com/what-are-my-weaknesses/what-are-my-weaknesses-small.jpg">
+                            <p>What Are My Weaknesses?</p>
+                        </li>
+                        <li>
+                            <img src="https://www.quizony.com/what-kind-of-weapon-are-you/what-kind-of-weapon-are-you-small.jpg">
+                            <p>What Kind Of Weapon Are You?</p>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="quiz">
+                    <h2>Story genres</h2>
+                    <ul>
+                       <li>Action</li>
+                       <li>Adventure</li>
+                       <li>Romance</li>
+                       <li>Long</li>
+                    </ul>
+                    <ul>
+                        <li>Historical</li>
+                        <li>Honnor</li>
+                        <li>Hummor</li>
+                        <li>Mystery</li>
+                    </ul>
+                   
+                    <ul>
+                        <li>Nonfiction</li>
+                        <li>Poetry</li>
+                        <li>Realistic</li>
+                        <li>Fantasy</li>
+                    </ul>
+                    <ul>
+                        <li>Fanfiction</li>
+                        <li>Thriller</li>
+                        <li>Challenge</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>Science Fiction</li>
+                        <li>Short Stories</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="box">Create story</div>
+            </div>
+            <div class="column1">
+                <div class="quiz">
+                    <h2>Popular tags</h2>
+                    <ul>
+                       <li>Girls</li>
+                       <li>Friends</li>
+                       <li>Fun</li>
+                       <li>Teens</li>
+                    </ul>
+                    <ul>
+                        <li>Love</li>
+                        <li>Personality</li>
+                        <li>Food</li>
+                        <li>History</li>
+                    </ul>
+                   
+                    <ul>
+                        <li>Name</li>
+                        <li>Generator</li>
+                        <li>Character</li>
+                        <li>Lifestyle</li>
+                    </ul>
+                    <ul>
+                        <li>Religion</li>
+                        <li>Music</li>
+                        <li>Style</li>
+                        <li>Animals</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>Knowledge</li>
+                        <li>Pets</li>
+                        <li>Tradition</li>
+                        <li>Life</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="footer">
+            <a href="#">Home</a>|
+            <a href="#">Advertise</a>|
+            <a href="#">Contact</a>|
+            <a href="#">About</a>|
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="hide">
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="end">
+            <a href="#">quizony.com</a>
+            <p>@2021.All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

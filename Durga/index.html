@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div  onclick="toggleSidebar()"  class="button">
@@ -18,12 +19,14 @@
     </div>
     <div class="sidebar"  onmouseout="mOut(this)">
         <div onclick="toggleSidebar()"  onmouseover="mOver(this)" class="close">
-            <img src="https://png.pngtree.com/png-vector/20190603/ourmid/pngtree-icon-close-button-png-image_1357955.jpg" width=30px alt="">
+            <i class="fas fa-times-circle"></i>
         </div>
-        <div class="text"><a href="index.html"> Home</a></div>
-        <a href="education.html"><div class="text">Education</div></a>
-        <div class="text"><a href="query.html">Query</a></div>
-        <div class="text"><a href="contact.html">Contact</a></div>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="query.html">Query</a></li>
+            <li><a href="contact.html">Contact</a></li>        
+        </ul>
     </div>
     <div class="name">
     <div class="word">
@@ -89,39 +92,52 @@
      <div class="row">
          <div class="column1">
              <h3>TO DO List</h3>
-             <p>This webpage is used to write the works you want to do .<br>
-                You can add your day activity and close it after completion <br>
+             <p>This webpage is used to write the works you want to do .
+                You can add your day activity and close it after completion 
                 of that Task.
-                This is Designed using HTML,Css,JavaScript .<br><br><Br></p>
-                
-                <div class="tag">
-                <a href="todo.html"><pre>  Todolist</pre></a>
-            </div>
+                This is Designed using HTML,Css,JavaScript .
+                </p>
+                <button onclick="todo(this)">Todo app</button>
         </div>
         <div class="column1">
             <h3>Color Code Generator</h3>
-            <p>This webpage is used to Generate Colorcodes.<br>
-                You can get random Color codes by clicking generate<br>
-                button and you get the color code and also color in<br>
+            <p>This webpage is used to Generate Colorcodes.
+                You can get random Color codes by clicking generate
+                button and you get the color code and also color in
                 background
-                This is Designed using HTML,Css,JavaScript .<br><br><Br>
+                This is Designed using HTML,Css,JavaScript .
                 </p>
-                <div class="tag">
-                <a href="colorcode.html"><pre>  ColorGenerator</pre></a>
-            </div>
+                <button onclick="code(this)">Color code</button>
+        </div>
+        <div class="column1">
+            <h3>Otp Page</h3>
+            <p>This webpage is used to Take otp from the user
+                User should enter otp that was sent to the mobile
+                by clicking verify
+                button and if the entered otp is correct
+                then it will direct to another page
+                This is Designed using HTML,Css .
+                </p>
+                <button onclick="otp(this)">Otp Page</button>
         </div>
          </div>
-         <div class="column1">
-            <h3>Otp Page</h3>
-            <p>This webpage is used to Take otp from the user<br>
-                User should enter otp that was sent to the mobile<br>
-                by clicking verify
-                button and if the entered otp is correct<br>
-                then it will direct to another page
-                This is Designed using HTML,Css .<br><br><Br>
-                </p>
-                <div class="tag">
-                <a href="otp.html"><pre>  Otp page</pre></a>
+        <div class="row">
+           
+            <div class="column1">
+                <h3>Quiz Layout</h3>
+                <p>This webpage is designed for Quiz app
+                    This is Designed using HTML,Css and JavaScript.
+                    it is responsive and supports in mobile too
+                    </p>
+                <button onclick="quiz(this)">Quiz Page</button>  
+            </div>
+            <div class="column1">
+                <h3>Aditya college</h3>
+                <p>This webpage is designed for Quiz app
+                    This is Designed using HTML,Css and JavaScript.
+                    it is responsive and supports in mobile too
+                    </p>
+                <button onclick="aditya(this)">Quiz Page</button>  
             </div>
         </div>
     </div>
@@ -145,6 +161,26 @@
             sidebar.classList.toggle("active");
                 
             
+        }
+        function otp(obj)
+        {
+            location.href="otp.html";
+        }
+        function code(obj)
+        {
+            location.href="colorcode.html";
+        }
+        function quiz(obj)
+        {
+            location.href="quiz.html";
+        }
+        function todo(obj)
+        {
+            location.href="todo.html";
+        }
+        function aditya(obj)
+        {
+            location.href="aditya.html";
         }
         
     </script>

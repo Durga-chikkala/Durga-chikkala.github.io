@@ -17,10 +17,40 @@
 #myUL{
     cursor: pointer;
     color: black;
+    font-weight: bold;
 }
 #full{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/793/103/631/typography-quote-bokeh-motivational-wallpaper-preview.jpg");
-    background-size: cover;
-    color:white;
+   
     
+}
+#btn{
+    margin-top: 10px;
+}
+body{
+    
+    background-image: url("https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+#body{
+    position: relative;
+    top:30px;
+    color:white;
+    text-decoration: underline;
+
+}
+.form-inline{
+    position: relative;
+    top:50px;
+}
+.fas{
+    color:white;
+    position: absolute;
+    top:15px;
+    left:10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+   
+}
+.fas:hover{
+    box-shadow: 0 0 10px red;
 }

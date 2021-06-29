@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inside1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inside1</title>
+    <script>
+        function change()
+        {   
+            var k=0;
+            if(k===0)
+            {
+                k=document.getElementById("btn1");
+                k.innerHTML="Following";
+                k.style.backgroundColor="pink";
+                k=1;
+            }
+            else{
+                k.innerHTML="Follow";
+                k.style.backgroundColor="blue";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="search">
+        <img class="img" src="data:image/png;base64,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"/>
+        <input type="text" placeholder="Search"/>
+    </div>
+    <div class="menuoption">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="profile">
+        <i class="fas fa-bell"></i>
+    </div>
+    <h1>Communities</h1>
+       
+        <div class="community">
+            
+                <div class="com1">
+                    <h3><u>Cse:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button id="btn1" onclick="change()" class="cse">Follow</button>
+                </div>
+                <div class="com1">
+                    <h3><u>Cse:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button id="btn1" onclick="change()" class="cse">Follow</button>
+                </div>
+                <div class="com1">
+                    <h3><u>Cse:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()" class="cse">Follow</button>
+                </div>
+                <div class="com1">
+                    <h3><u>Cse:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()"  class="cse">Follow</button>
+                </div>
+                <div class="com1">
+                    <h3><u>Eee:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button class="eee">Follow</button>
+                    
+                </div>
+                <div class="com1">
+                    <h3><u>Eee:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()"  class="eee">Follow</button>
+                    
+                </div>
+                <div class="com1">
+                    <h3><u>Eee:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()"  class="eee">Follow</button>
+                    
+                </div>
+                <div class="com1">
+                    <h3><u>Eee:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()"  class="eee">Follow</button>
+                    
+                </div>
+                <div class="com1">
+                    <h3><u>Ece:</u></h3>
+                    <p>
+                       computer science and engineering deals with progarmming languages 
+                       and development of software.
+                    </p>
+                    <button onclick="change()" class="ece">Follow</button>
+                    
+                </div>
+               
+                
+            </div>   
+        </div>  
+        <div class="menu">
+            <div class="row2">
+                <div class="columns">
+                    <div class="communities">
+                        <a href="inside1.html"><i class="fas fa-users"></i></a>
+                    </div>
+                    <div class="mycommunity">
+                        <a href="inside2.html"><i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="pro">
+                        <a href="profile.html"><i class="fas fa-user"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>

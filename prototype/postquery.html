@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post Query</title>
+    <style>
+        .text{
+            position: fixed;
+            left:50%;
+            top:2;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 20;
+        }
+        
+        .text button{
+            padding: 8px;
+            background-color: rgb(67, 241, 241);
+            outline: none;
+        }
+        body{
+            z-index: 20;
+        }
+        .added{
+            list-style-type: none;
+            width:80%;
+            margin: auto;
+            height:100px;
+            position: relative;
+            top:300px;
+            box-sizing: border-box;
+            box-shadow: 0 0 1px black;
+            overflow: scroll;
+            margin-bottom: 20px;
+            z-index: -1;
+
+        }
+        label{
+            position: absolute;
+            top:10px;
+            left:20px;
+            font-size: 18px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="text">
+        <label id="heading">Enter Query Here</label>
+        <textarea onmouseover="mOver(this)" onmouseout="mOut(this)" cols="40" rows="10" id="text">
+
+        </textarea><br>
+        <button onclick="add()" type="submit">Submit</button>
+    </div>
+    <script>
+        function add()
+        {
+            var textentered;
+            textentered=document.getElementById("text").value;
+            var li=document.createElement("LI");
+            var text=document.createTextNode(textentered);
+            li.appendChild(text);
+            document.body.appendChild(li);
+            li.className="added";
+            document.getElementById("text").value="";
+        }
+        function mOut(obj)
+        {
+            document.getElementById("heading").style.top="10px";
+            obj.style.borderTop="1px solid black";
+            obj.style.outline="visible";
+
+        }
+        function mOver(obj)
+        {
+             document.getElementById("heading").style.top="-10px";
+             obj.style.borderTop="none";
+             obj.style.outline="none";
+        }
+    </script>
+</body>
+</html>

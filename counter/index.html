@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="counter.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+            
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width:150px;
+            height: 150px;
+            background-color: rgb(72, 72, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box h1{
+            font-size: 48px;
+            color:white;
+        }
+        .plus{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 0 0 3px black;
+            position: absolute;
+            left:67%;
+            top:52%;
+            transform: translate(-67%.-52%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+
+        }
+        .plus1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 0 0 3px black;
+            position: absolute;
+            left:55%;
+            top:60%;
+            transform: translate(-58%.-60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <h1 id="count">0</h1>
+            <div class="plus" onclick="countin()">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="plus1" onclick="decrease()">
+                <i class="fas fa-minus"></i>
+            </div>
+        </div>
+      
+    </div>
+    <script>
+        var count=0;
+        function countin()
+        {
+            count++;
+            document.getElementById("count").innerHTML=count;
+        }
+        function decrease()
+        {
+            count--;
+            document.getElementById("count").innerHTML=count;
+        }
+    </script>
+</body>
+</html>

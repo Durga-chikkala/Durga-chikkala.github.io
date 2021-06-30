@@ -19,16 +19,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+            background:rgb(9,200,210);
+        }
+        .container h1{
+            position: absolute;
+            top:20px;
+            color:rgb(245, 243, 223);
+            font-size: 42px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
         }
         .box{
             width:150px;
             height: 150px;
-            background-color: rgb(72, 72, 240);
+            background-color: rgb(82, 82, 248);
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .box h1{
+        .box h2{
             font-size: 48px;
             color:white;
         }
@@ -70,8 +80,9 @@
 <body>
     
     <div class="container">
+        <h1>Counter </h1>
         <div class="box">
-            <h1 id="count">0</h1>
+            <h2 id="count">0</h2>
             <div class="plus" onclick="countin()">
                 <i class="fas fa-plus"></i>
             </div>

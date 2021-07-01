@@ -9,13 +9,22 @@
     <title>Calculator</title>
 </head>
 <body id="body">
-  
+    <div class="mobilenav" >
+        <i onclick="myfunction()" class="far fa-times-circle"></i>
+        <ul >
+            <li id="category" onclick="todo()">Todo List</li>
+            <li id="create" onclick="counter()" >Counter</li>
+            <li onclick="signup()">Sign up</li>
+            <li>Log in</li>
+        </ul>
+    </div>  
     <div class="container">
         <label  onclick="blackmode()" class="switch">
             <input id="check" type="checkbox"/>
             <span class="slider"></span>
         </label>
     </div>
+    
     <div  id="screen1" class="screen">
         <h3 id="text">Enter something dude</h3>
     </div>
@@ -62,12 +71,15 @@
         
     </div>
     <div onclick="myfunction()" class="circle">
-        <i class="fas fa-sync-alt"></i>
+        <i class="fas fa-bars"></i>
     </div>
+    
    <script>
        function myfunction()
        {
-           location.replace("todo.html");
+           var k;
+           k=document.querySelector(".mobilenav");
+           k.classList.toggle("active");
        }
        var a="";
        function zero()
@@ -191,12 +203,12 @@
                 var button=document.getElementsByTagName("button");
                 for(var i=0;i<button.length;i++)
                 {
-                    button[i].style.backgroundColor="black";
+                    button[i].style.backgroundColor="rgba(0,0,0,0.5)";
                     button[i].style.color="white";
                     button[i].style.borderColor="white";
                 }
-                document.getElementById("type").style.backgroundColor="black";
-                document.getElementById("type").style.boxShadow="0px 0px 8px white";
+                document.getElementById("type").style.backgroundColor="rgba(0,0,0,0.7)";
+                document.getElementById("type").style.boxShadow="0px 0px 2px white";
                 
             }
             else{
@@ -215,6 +227,18 @@
                 
             }
        
+        }
+        function todo()
+        {
+            location.href="todo.html";
+        }
+        function counter()
+        {
+            location.href="counter.html";
+        }
+        function signup()
+        {
+            location.href="singup.html";
         }
    </script>
     

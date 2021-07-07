@@ -12,7 +12,6 @@
         <div class="code">
             <div id="color1" class="color">#ffffff
             </div>
-            <hr>
             <div class="btn">
             <button onclick="generate();">Generate</button>
         </div>
@@ -21,12 +20,12 @@
     </div>
     <script>
         function generate()
-{
+        {
         var colorcode=(Math.floor(Math.random()*16777216)).toString(16);
         document.body.style.backgroundColor="#"+colorcode;
         var text=document.getElementById("color1");
         text.innerHTML="#"+colorcode;
-}
+        }
     </script>
 </body>
 </html>

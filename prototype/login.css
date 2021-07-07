@@ -15,10 +15,10 @@
     font-size: 14px;
 }
 .heading a{
-    position: absolute;
-    left:98px;
+    position:relative;
+    left:90px;
     color:blue;
-    top:68px;
+    top:58px;
     font-weight: lighter;
     font-size: 14px;
     text-decoration: none;
@@ -30,15 +30,16 @@
     top:100px;
 }
 .inputs input{
-    width:150%;
+    width:130%;
     height: 30px;
-    margin:12px;
-    
+    margin:13px;
+    margin-left: 20px;
+    outline: none;
     font-size: 15px;
     border:none;
     font-weight: bold;
     border-radius: 15px;
-    background-color: rgb(168, 209, 233);
+    background-color: rgb(19, 150, 226);
     opacity:0.9 ;
 }
 .inputs input:focus{
@@ -59,9 +60,9 @@
     left:32px;
 }
 .login button{
-    position: absolute;
-    top:215px;
-    right:30px;
+    position: relative;
+    left:200px;
+    top:190px;
     background-color:transparent;
     padding:5px;
     width:100px;
@@ -72,16 +73,32 @@
 .login button:hover{
     background-color: rgb(50, 101, 241);
 }
+
 .or{
     position: absolute;
-    top:276px;
-    right:160px;
+    top:43%;
+    left:50%;
+    transform: translate(-50%,-43%);
     background-color: white;
     font-size: 22px;
+    background-color: white;
+    width: 10px;
+    z-index: 20px;
+ 
 }
 .options{
     display:flex;
     flex-direction: column;
+}
+.line{
+    width:100%;
+    height:1px;
+    background-color: black;
+    position: absolute;
+    top:43.5%;
+    left:50%;
+    transform: translate(-50%,-43%);
+
 }
 .google{
     box-sizing: border-box;

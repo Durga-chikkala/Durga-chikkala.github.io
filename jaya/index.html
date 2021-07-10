@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     .potrait{
+         width: 100%;
+         height:100vh;
+         position: absolute;
+         overflow: hidden;
+         top:0;
+         left:0;
+     }
+     .potrait img{
+        width: 100%;
+        height:100vh;
+      
+        position: absolute;
+        top:0;
+        left:0;
+        object-fit: contain;
+        background-color: black;
+     }
+    .texture{
+        mix-blend-mode:multiply;
+        filter: contrast(1.5);
+        
+     }
+    </style>
+</head>
+<body>
+  <div class="potrait">
+      <img src="pp.jpg" alt="">
+      <img  src="https://images.unsplash.com/photo-1606983044731-827bb9051339?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80" class="texture" >
+  </div>
+</body>
+</html>

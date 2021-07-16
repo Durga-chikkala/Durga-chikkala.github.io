@@ -239,7 +239,7 @@ h1{
     left:100px;
 }
 .contact img{
-    width:400px;
+    width:50%;
     z-index: 10;
     border-radius: 50%;
     height: 270px;

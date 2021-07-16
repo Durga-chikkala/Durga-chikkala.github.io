@@ -21,6 +21,7 @@
 }
 body{
     font-size:20px;
+    overflow: hidden;
 }
 .sidebar{
     transform: translateY(-100%);

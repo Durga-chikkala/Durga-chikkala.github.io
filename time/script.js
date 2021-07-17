@@ -16,7 +16,6 @@ function currentTime()
     hour=update(hour);
     min=update(min);
     sec=update(sec);
-    console.log(min);
     curr_Date=update(curr_Date);
     var k=document.querySelector("#times");
     k.innerHTML=`${hour}:${min}`;

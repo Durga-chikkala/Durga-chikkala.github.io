@@ -3,11 +3,7 @@
     padding:0px;
     box-sizing: border-box;
 }
-.wrapper{
-    width:20%;
-    
-    
-}
+
 .text{
     background: linear-gradient(to bottom,#2980b9,#2c3e50);
     -webkit-text-fill-color: transparent;
@@ -21,7 +17,7 @@ body{
 }
 .time_wrapper{
     position: relative;
-    width:60%;
+    
 }
 #times{
     font-size: 4.5rem;
@@ -38,8 +34,7 @@ body{
 .day_wrapper{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
 }
 .day_wrapper span{
     font-size: 0.9rem;

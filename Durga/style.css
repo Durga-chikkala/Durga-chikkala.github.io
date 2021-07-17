@@ -389,7 +389,7 @@ h1{
 }
 .col{
     flex-basis: 70%;
-    margin: 30px 20px;
+    margin: 30px -10px;
 }
 .col img{
     width:300px;
@@ -404,6 +404,7 @@ h1{
     transition: 1s;
     border-radius: 10px;
     padding: 10px;
+    font-size: 1rem;
     
 }
 .col p:hover{
@@ -419,21 +420,25 @@ h1{
     align-items: center;
     justify-content: center;
     height: 80vh;
+    width:100%;
 }
-.container {
-    width: 32rem;
+.special .container {
+    width:80vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 46PX;
-    height: 20rem;
+    height: 50vh;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15); 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
     
+}
+.special .container p{
+    text-align: center;
+    font-size: 22px;
 }
 .column1 button{
     padding:10px;

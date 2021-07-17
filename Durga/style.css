@@ -101,6 +101,7 @@ ul {
     list-style: none;
     overflow: hidden;
     box-sizing: border-box;
+    margin-left: 10px;
 
     
 }

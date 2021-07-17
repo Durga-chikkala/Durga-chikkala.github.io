@@ -41,5 +41,5 @@ body{
 .day_wrapper span{
     font-size: 0.9rem;
     opacity: 0.4;
-    font-weight: 600;
+    font-weight: bold;
 }

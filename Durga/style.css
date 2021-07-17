@@ -19,6 +19,34 @@
     margin: 0;
     padding: 0;
 }
+.circle{
+    width:150px;
+    height:150px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px white;
+    background:transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:20%;
+    left:10%;
+}
+.hour{
+    width:3px;
+    height:75px;
+    background-color: black;
+    position: absolute;
+    left:50%;
+    top:25%;
+    transform: translate(-50%,-50%);
+    animation: move 1s linear infinite;
+    
+}
+@keyframes move {
+    0%{
+
+    }
+    
+}
 body{
     font-size:20px;
     
@@ -221,25 +249,38 @@ h1{
     margin: auto;
     height: 100vh;
 }
-
 .cardc.fas{
     font-size: 18px;
     color:maroon;
     position: absolute;
     left:100px;
 }
+.full{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px black;
+    width:30%;
+    height:30%;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-10%);
+    
+
+}
 .contact img{
-    width:20rem;
+    width:100%;
     z-index: 10;
     border-radius: 50%;
-    height: 270px;
+    height: 100%;
     position: absolute;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px black;
     left:50%;
-    transform: translateX(0%);
+    transform: translateX(-50%);
+    transition: 1s;
+    
 }
-.contact .side{
+.side{
 
     width: 5rem;
     border-radius: 10px;
@@ -251,12 +292,14 @@ h1{
     box-sizing: border-box;
     box-shadow: 0px 0px 5px rgb(0,0,0,0.5);
     position: absolute;
-    left:63%;
+    left:55%;
     transform: translateX(-50%);
+    transition: 1s;
 
 }
-.contact img:hover .contact .side{
-    transform: ;
+.full:hover .side{
+   
+    transform: translateX(180%);
     
 }
 .side p{
@@ -372,6 +415,18 @@ h1{
         width:20rem;
         font-size: 32px;
     }
+    .contact img{
+        width:250px;
+        height:250px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .full:hover .side{
+   
+        transform: translateX(120%);
+        
+    }
+
 }
 .email input{
     width: 40%;

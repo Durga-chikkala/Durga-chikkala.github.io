@@ -11,7 +11,7 @@ function currentTime()
     var months=["January","February","March","April","May","June","July","Augest","September","October","November","December"];
     var showDay=document.querySelector(".day_wrapper span");
     var midday="AM";
-    midday=hour>12 ? "AM":"PM";
+    midday=hour>12 ? "PM":"AM";
     hour=hour==0 ? 12:hour>12 ? hour-12 :hour;
     hour=update(hour);
     min=update(min);

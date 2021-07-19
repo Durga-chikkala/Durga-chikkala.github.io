@@ -497,12 +497,27 @@ h1{
     .hour{
         width:3px;
         height:31px;
-        background-color: black;
+        background-color: rgb(226, 30, 30);
         position: absolute;
         left:50%;
         top:20%;
         transform: translate(-50%,-11%);
+        animation: moves  1s linear infinite;
         
+    }
+    @keyframes moves {
+        0%{
+            transform: rotateZ(0deg);
+            
+        }
+        8.33%{
+            transform: rotateZ(45deg);
+        }
+        16.66%{
+            transform: rotateZ(90deg);
+           
+        }
+
         
     }
     .minutes{

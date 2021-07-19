@@ -1,3 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button button{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center,#FFFFFF,#FFE484,#FFCC33,#FC9601,#D14009);
+    border:none;
+    font-weight: bold;
+
+}
 .sidebar{
     height:100vh;
     width: 100%;
@@ -14,60 +32,8 @@
     font-size: 18px;
    
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-.circle{
-    width:150px;
-    height:150px;
-    box-sizing: border-box;
-    box-shadow: 0 0 5px white;
-    background:transparent;
-    border-radius: 50%;
-    position: absolute;
-    top:20%;
-    left:10%;
-}
-.hour{
-    width:3px;
-    height:45px;
-    background-color: black;
-    position: absolute;
-    left:50%;
-    top:20%;
-    transform: translate(-50%,-11%);
-    
-    
-}
-.minutes{
-    width:2px;
-    height:50px;
-    background-color: black;
-    position: absolute;
-    left:50%;
-    top:80%;
-    transform: translate(-50%,-80%) ; 
-}
-.seconds{
-    width:1px;
-    height:55px;
-    background-color: black;
-    position: absolute;
-    left:70%;
-    top:50%;
-    transform: translate(-50%,-50%) rotateZ(90deg) ;
-}
-.dot{
-    width:10px;
-    height:10px;
-    border-radius: 50%;
-    background-color: #db2c06;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
+
+
 body{
     font-size:20px;
     
@@ -456,100 +422,7 @@ h1{
     margin-top: 10px;
     
 } 
-@media (max-width:700px)
-{
-    .row2{
-        flex-direction: column;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .card{
-        position: absolute;
-        bottom:20px;
-    }
-    .container{
-        width:20rem;
-        font-size: 32px;
-    }
-    .contact img{
-        width:250px;
-        height:250px;
-        left:50%;
-        transform: translateX(-50%);
-    }
-    .full:hover .side{
-   
-        transform: translateX(120%);
-        
-    }
-    .circle{
-        width:110px;
-        height:110px;
-        box-sizing: border-box;
-        box-shadow: 0 0 5px white;
-        background:transparent;
-        border-radius: 50%;
-        position: absolute;
-        top:20%;
-        left:10%;
-    }
-    .hour{
-        width:3px;
-        height:31px;
-        background-color: rgb(226, 30, 30);
-        position: absolute;
-        left:50%;
-        top:20%;
-        transform: translate(-50%,-11%);
-        animation: moves  1s linear infinite;
-        
-    }
-    @keyframes moves {
-        0%{
-            transform: rotateZ(0deg);
-            
-        }
-        8.33%{
-            transform: rotateZ(45deg);
-        }
-        16.66%{
-            transform: rotateZ(90deg);
-           
-        }
 
-        
-    }
-    .minutes{
-        width:2px;
-        height:35px;
-        background-color: black;
-        position: absolute;
-        left:50%;
-        top:80%;
-        transform: translate(-50%,-80%) ; 
-    }
-    .seconds{
-        width:1px;
-        height:50px;
-        background-color: black;
-        position: absolute;
-        left:70%;
-        top:50%;
-        transform: translate(-50%,-50%) rotateZ(90deg) ;
-    }
-    .dot{
-        width:10px;
-        height:10px;
-        border-radius: 50%;
-        background-color: #db2c06;
-        position: absolute;
-        left:50%;
-        top:50%;
-        transform: translate(-50%,-50%);
-    }
-
-}
 .email input{
     width: 40%;
     height: 10vh;
@@ -595,5 +468,183 @@ h1{
     font-size: 24px;
     transform: translateX(-50%);
     margin-bottom: 50px;
+    
+}
+.clock{
+    width:350px;
+    height: 350px;
+    background:url("clock.png") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #030302;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow:  0px -15px 15px rgba(225, 225, 225,0.05),
+    inset 0px -15px 15px rgba(225, 225, 225,0.05),
+    0px 15px 15px rgba(0, 0, 0,0.3),
+    inset 0px -15px 15px rgba(0, 0, 0,0.3);
+    position: absolute;
+    left:10px;
+    background-color: black;
+}
+.clock::before
+{
+    content: "";
+    width:15px;
+    height:15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10000;
+
+}
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+.clock .hour, .hr{
+    width:160px;
+    height:160px;
+    
+}
+.clock .min, .mn{
+    width:190px;
+    height:190px;
+    
+}
+.clock .sec, .sc{
+    width:210px;
+    height:210px;
+}
+.hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+   
+}
+.hr::before{
+    content: "";
+    width:8px;
+    position: absolute;
+    height:80px;
+    background: #f8fcfb;
+    z-index: 10;
+
+}
+.mn::before{
+    content: "";
+    width:4px;
+    position: absolute;
+    height:90px;
+    background: #fff;
+    z-index: 10;
+
+}
+.sc::before{
+    content: "";
+    width:2px;
+    position: absolute;
+    height:150px;
+    background: #fff;
+    z-index: 10;
+
+}
+@media (max-width:700px)
+{
+    .row2{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .card{
+        position: absolute;
+        bottom:20px;
+    }
+    .container{
+        width:20rem;
+        font-size: 32px;
+    }
+    .contact img{
+        width:250px;
+        height:250px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .full:hover .side{
+   
+        transform: translateX(120%);
+        
+    }
+    
+    .clock{
+        width:150px;
+        height: 150px;
+        background:url("clock.png") ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid #030302;
+        border-radius: 50%;
+        background-size: cover;
+        box-shadow:  0px -15px 15px rgba(225, 225, 225,0.05),
+        inset 0px -15px 15px rgba(225, 225, 225,0.05),
+        0px 15px 15px rgba(0, 0, 0,0.3),
+        inset 0px -15px 15px rgba(0, 0, 0,0.3);
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:-100%;
+        background-color: black;
+        transition: 1s;
+    }
+    .clock.active{
+        top:06%;
+    }
+    .clock .hour, .hr{
+        width:80px;
+        height:80px;
+        
+    }
+    .clock .min, .mn{
+        width:85px;
+        height:85px;
+        
+    }
+    .clock .sec, .sc{
+        width:100px;
+        height:100px;
+    }
+    .hr::before{
+        content: "";
+        width:5px;
+        position: absolute;
+        height:40px;
+        background: #f8fcfb;
+        z-index: 10;
+    
+    }
+    .mn::before{
+        content: "";
+        width:4px;
+        position: absolute;
+        height:45px;
+        background: #fff;
+        z-index: 10;
+    
+    }
+    .sc::before{
+        content: "";
+        width:2px;
+        position: absolute;
+        height:75px;
+        background: #fff;
+        z-index: 10;
+    
+    }
+   
     
 }

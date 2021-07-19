@@ -14,8 +14,9 @@
     <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div  onclick="toggleSidebar()"  class="button">
-        <img src="https://static.thenounproject.com/png/424912-200.png"/ width=40px>
+    <div   class="button">
+        <img src="https://static.thenounproject.com/png/424912-200.png" onclick="toggleSidebar()"  width=40px>
+        <button onclick="clockdown()" class="clockshow">Clock</button>
     </div>
     <div class="sidebar">
         <div class="close">
@@ -35,11 +36,19 @@
         </ul>
     </div>
     <div class="name">
-        <div class="circle">
-            <div class="seconds"></div>
-            <div class="dot"></div>
-            <div class="minutes"></div>
-            <div class="hour"></div>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr">
+                </div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn">
+                </div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc">
+                </div>
+            </div>
         </div>
         <div class="word">
             <span>D</span>
@@ -78,7 +87,24 @@
             const sidebar=document.querySelector(".sidebar");
             sidebar.classList.toggle("active");   
         }
-        
+        const deg=6;
+        const hr=document.querySelector("#hr");
+        const mn=document.querySelector("#mn");
+        const sc=document.querySelector("#sc");
+        setInterval(()=>{
+        let day=new Date();
+        let hh=day.getHours()*30;
+        let mm=day.getMinutes()*deg;
+        let ss=day.getSeconds()*deg;
+        hr.style.transform=`rotateZ(${(hh)+(mm/12)}deg)`;
+        mn.style.transform=`rotateZ(${(mm)}deg)`;
+        sc.style.transform=`rotateZ(${(ss)}deg)`;
+        });
+        function clockdown()
+        {
+            var k=document.querySelector(".clock");
+            k.classList.toggle("active");
+        }
     </script>
 </body>
 </html>

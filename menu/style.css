@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+ul
+{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+}
+ul li{
+
+    margin: 0px 40px;
+   
+    
+}
+ul li a .fab{
+   font-size: 46px;
+  
+  
+    
+}
+ul li a{
+    position:relative ;
+    width:80px;
+    height: 80px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(255, 249, 249);
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0px,0px);
+    box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li a::before{
+    content:'';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    width:20px;
+    height:100%;
+    background-color:rgb(240, 239, 239);
+    transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after{
+    content:'';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    width:100%;
+    height:20px;
+    background-color:rgb(240, 239, 239);
+    transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+    box-shadow: -30px 30px 10px black;
+}
+ui li:nth-child(1):hover{
+    background-color: rgb(35, 35, 185);
+}

@@ -260,4 +260,21 @@ h1{
     font-size: 1rem;
     
 }
-
+.special{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at bottom,#FFFFFF,#FFE484,#FFCC33,#FC9601,#D14009);
+}
+.ball{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ee4503;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}

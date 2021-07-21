@@ -236,6 +236,7 @@ h1{
 }
 .row2{
     display: flex;
+    margin-top: 40px;
 }
 .col{
     flex-basis: 25%;

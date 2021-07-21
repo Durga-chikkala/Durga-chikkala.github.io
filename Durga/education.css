@@ -236,20 +236,18 @@ h1{
 }
 .row2{
     display: flex;
-  
-
 }
 .col{
-    flex-basis: 40%;
+    flex-basis: 25%;
     box-sizing: border-box;
     box-shadow: 0 0 4px black;
     position: relative;
-    
+    margin:auto ;
 }
 .col img{
     width:300px;
     height:200px;
-    border-radius: 200px;
+    border-bottom-right-radius: 100px;
 }
 .col p{
  
@@ -261,9 +259,4 @@ h1{
     font-size: 1rem;
     
 }
-.col p:hover{
-   
-    background:#db2c06;
-    font-weight: 600px;
 
-}

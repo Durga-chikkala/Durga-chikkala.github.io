@@ -366,10 +366,7 @@ h1{
         background-color:rgb(240, 239, 239);
         transform: rotate(0deg) skewX(-45deg);
     }
-    .fab{
-        font-size: 4px;
-        color: rgb(41, 200, 248);
-    }
+    
     .html{
         position: absolute;
         top:80%;

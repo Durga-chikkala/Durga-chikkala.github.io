@@ -240,7 +240,7 @@ h1{
 
 }
 .col{
-    flex-basis: 50%;
+    flex-basis: 40%;
     box-sizing: border-box;
     box-shadow: 0 0 4px black;
     position: relative;

@@ -155,7 +155,11 @@ body{
 .word span:nth-child(4){
     animation-delay: 1.5s;
 }
-
+.study{
+    margin:auto;
+    width:80%;
+    text-align: center;
+}
 h1{
     text-align: center;
     margin-top: 3rem;

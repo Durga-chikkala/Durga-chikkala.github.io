@@ -306,6 +306,8 @@ h1{
     .row{
         flex-direction: column;
     }
-    
+    .row2{
+        flex-direction: column;
+    }
 
 }

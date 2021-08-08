@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+        }
+        h1{
+            font-size: 48px;
+            text-align: center;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        .container{
+            
+            width:90%;
+            height:100%;
+            margin: auto;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            line-height: 25px;
+        }
+        img{
+            width:100%;
+        }
+        .inside{
+            height:400px;
+            width:70%;
+            margin-left: 180px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        p{
+            margin-top: 20px;
+        }
+        .images{
+            width:100%;
+            height:100vh;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .examplerow{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            height: 100vh;
+            margin-top: 20px;
+            justify-content: space-between;
+
+        }
+        .examplecol{
+            
+            width:90%;
+            height:120px;
+            margin:auto;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 20px #ccc,
+                         -10px -10px 20px #fff;
+        }
+        .roadmap{
+           position: relative;
+           width:100%;
+           height:80vh;
+           display: flex;
+           align-items: center;
+           justify-content:center ;
+
+        }
+        .btn2{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            right:5%;
+            cursor: pointer;
+           
+
+        }
+        
+        .btn1{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            left:5%;
+            cursor: pointer;
+            border-width:3px ;
+            border-color: linear-gradient(to left,#ff4432,#ff);
+        }
+        iframe{
+           width:80%;
+           height:50%; 
+        }
+        h2{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .test{
+            width:50%;
+            height:80vh;
+            background: blanchedalmond;
+            margin: auto;
+            position: fixed;
+            z-index: 10;
+            left:50%;
+            top:-80%;
+            transform: translateX(-50%);
+            transition: 1s;
+        }
+        .test.active{
+            top:0%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="test" id="test">
+        <div class="question">
+            <h5>1.What is mean?</h5>
+
+        </div>
+    </div>
+    <h1>Artificial Intelligence</h1>
+    <div class="btn">
+        <button onclick="taketest()" class="btn1">Take test</button>
+        <button class="btn2"> Go to Course</button>
+    </div>
+ 
+    <div class="container">
+        <img src="https://www.nato.int/docu/review/images/5572e8_1_christie_ai_hso-com.jpg">
+        <p>Artificial intelligence and machine learning once represented the cutting edge of computer science. When these technologies were created in the last 20th century, they hardly had any applications and were, in fact, mostly academic. However, these technologies have gained applications over the years and reached ordinary people’s hands through their mobile phones.<br/><br/>
+
+            Machine learning represents a computer science field in which an algorithm can predict future data based on previously generated data. Artificial intelligence represents the next step in machine learning, in which an algorithm develops data-based intelligence and can even carry out essential tasks on its own.<br/><br/>
+            
+            Both artificial intelligence and machine learning requires advanced knowledge of statistics. Statistics help you determine the results that your algorithm might throw up for a particular dataset, thus evolving it further. The proliferation of machine learning applications has meant that the number of jobs in this field has also grown.<br/><br/>
+            
+            Machine learning is among the leading technologies of this century. A career in this domain can expose you to advanced computational infrastructure and novel research in the field making this a fine new technology in 2021 you should consider getting into. Having a job in machine learning and artificial intelligence domain(s) places you at the forefront of technological development in the field of computer science.</p><br>
+            <img class="inside" src="https://s3.ap-south-1.amazonaws.com/upgrad.prod.blog/blog/wp-content/uploads/2021/03/31114543/shutterstock_484275199-Converted-768x511-1.jpg">
+            <p>In fields such as retail and e-commerce, machine learning is an essential component to enhance user experience. The product recommendations that you see on such sites are generally a result of a machine learning algorithm analysing your previous searches and recommending similar products to you. In the healthcare field, machine learning can help analyse data to provide treatment insight to physicians. Even though AI is helping us in our day to day lives, it is still a new technology in 2021 considering its potential. </p>
+    </div>
+    <div class="images">
+        <h2>Some Examples</h2>
+        <div class="examplerow">
+            <div class="examplecol">
+                <h3>Face Detection and Recognition</h3>
+                <p>Using virtual filters on our face when taking pictures and using face ID for unlocking our phones are two applications of AI that are now part of our daily lives. The former incorporates face detection meaning any human face is identified. The latter uses face recognition through which a specific face is recognised.</p>
+            </div>
+            <div class="examplecol">
+                <h3>Search and Recommendation Algorithms</h3>
+                <p>When you want to watch your favorite movies or listen to songs or perhaps shop online, have you noticed that the items suggested to you are perfectly aligned with your interests? This is the beauty of AI.</p>
+            </div>
+            <div class="examplecol">
+                <h3>Chatbots</h3>
+                <p>As a customer, getting queries answered can be time-consuming. An artificially intelligent solution to this is the use of algorithms to train machines to cater to customers via chatbots. This enables machines to answer FAQs, and take and track orders.</p>
+            </div>
+            <div class="examplecol">
+                <h3>Social Media</h3>
+                <p>The advent of social media provided a new narrative to the world with excessive freedom of speech. However, this brought some societal evils such as cybercrime, cyberbullying, and hate speech. Various social media applications are using the support of AI to control these problems and provide users with other entertaining features.</p>
+            </div>
+        </div>
+    </div>
+    <div class="photos">
+        <div class="pics">
+            <img src="">
+
+        </div>
+    </div>
+    <h2>Roadmap to AI</h2>
+    <div class="roadmap">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J_YLjCTOFWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+       function taketest()
+       {
+           var test=document.querySelector(".test");
+           test.classList.toggle("active");
+
+       }
+    </script>
+   
+</body>
+</html>

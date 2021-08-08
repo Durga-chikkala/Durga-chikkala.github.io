@@ -1,0 +1,147 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+.header{
+    width:100%;
+    height:100vh;
+    background-color:#b9d1df;
+}
+.nav{
+    width:50%;
+    height:60px;
+    position: absolute;
+    right: 0px;
+    top:10px;
+    background: #b9d1df;
+    
+}
+.nav ul{
+    height:100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Marcellus', serif;
+}
+.nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+.nav ul li::after{
+    content: "";
+    width:0%;
+    height:3px;
+    display: block;
+    position: absolute;
+    top:20px;
+    background-color: #f44336;
+}
+.nav ul li:hover::after{
+    width:100%;
+    transition: 1s;
+}
+.headingtext{
+  
+    position: absolute;
+    left:20%;
+    top:50%;
+    transform: translate(-20%,-50%);
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Marcellus', serif;
+}
+.header h1{
+   
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Marcellus', serif;
+    font-size: 64px;
+}
+
+.logo{
+    margin-left:10px;
+    position: absolute;
+    top:10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: move 1s linear infinite;
+    
+}
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-track{
+    background:linear-gradient(to bottom ,rgb(13, 56, 73),#1877f2,#1877f2,#1877f2);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+   border-radius: 10px;
+}
+.pic{
+    width:40%;
+    height:80vh;
+    position: absolute;
+    bottom:60px;
+    right:30px;
+    border-radius: 50%;
+}
+.body1{
+    width:80%;
+    height:100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.body1 .subpart{
+    width:20%;
+    margin-top: 50px;
+    height:90vh;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px #ccc,
+                -10px -10px 20px #fff;
+}
+.body1 .subpart ul{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.body1 .subpart ul li{
+    cursor: pointer;
+
+}
+.body1 .main{
+    width:75%;
+    height:90vh;
+    margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px #ccc,
+                -10px -10px 20px #fff;
+
+}
+.grade{
+    position: absolute;
+    top:80%;
+    left:15%;
+    transform: translate(-15%,-80%);
+    text-align: center;
+}
+.grade h2{
+    font-size: 38px;
+}
+.grade h3{
+    font-size: 32px;
+
+}

@@ -10,6 +10,20 @@ html{
     height:100vh;
     background-color:#b9d1df;
 }
+.body0{
+    width:100%;
+    height:100vh;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Marcellus', serif;   
+     text-align: center;
+}
+.body0 h2{
+    margin-top: 40px;
+    text-align: center;
+}
+.body0 span{
+    margin-left: 120px;
+}
 .nav{
     width:50%;
     height:60px;

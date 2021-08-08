@@ -88,8 +88,8 @@ padding: 0px;
    border-radius: 10px;
 }
 .pic{
-    width:40%;
-    height:80vh;
+    width:35%;
+    height:70vh;
     position: absolute;
     bottom:60px;
     right:30px;
@@ -107,8 +107,8 @@ padding: 0px;
     margin-top: 50px;
     height:90vh;
     box-sizing: border-box;
-    box-shadow: 10px 10px 20px #ccc,
-                -10px -10px 20px #fff;
+    box-shadow:  10px 10px 22px #a8a8a8,
+    -10px -10px 22px #ffffff;
 }
 .body1 .subpart ul{
     list-style-type: none;
@@ -127,8 +127,8 @@ padding: 0px;
     height:90vh;
     margin-top: 50px;
     box-sizing: border-box;
-    box-shadow: 10px 10px 20px #ccc,
-                -10px -10px 20px #fff;
+    box-shadow:  10px 10px 22px #a8a8a8,
+    -10px -10px 22px #ffffff;
 
 }
 .grade{

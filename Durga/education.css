@@ -107,8 +107,6 @@
 .box ul li a .fab{
    font-size: 46px;
   
-  
-    
 }
 .text{
     position: absolute;
@@ -237,6 +235,7 @@ h1{
 .row2{
     display: flex;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 .col{
     flex-basis: 25%;
@@ -264,12 +263,11 @@ h1{
     width:100%;
     height: 80vh;
     display: flex;
-  
     align-items: center;
     background-image: radial-gradient(circle at bottom,#FFFFFF,#FFE484,#FFCC33,#FC9601,#D14009);
 }
 .background{
-    animation: mov 2s linear 2s infinite;
+    animation: move 2s linear 2s infinite;
     display: flex;
   
 }
@@ -277,7 +275,7 @@ h1{
     width:50px;
     height: 50px;
     border-radius: 50%;
-    background: #ee4503;
+    background: #d64208;
     display: flex;
     justify-content: center;
     align-items: center;

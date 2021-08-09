@@ -11,19 +11,45 @@ html{
     background-color:#b9d1df;
 }
 .body0{
-    width:100%;
+    width:80%;
+    margin: auto;
     height:100vh;
     font-family: 'Lobster Two', cursive;
     font-family: 'Marcellus', serif;   
      text-align: center;
+     position: relative;
+}
+.computer{
+    float:left;
+    margin-right: 30px;
+}
+.firstletter{
+    font-size: 28px;
+}
+
+.texthead{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+}
+.aboutcomputer{
+    position: absolute;
+    top:10%;
+}
+.aboutprogramming{
+    position: absolute;
+    top:50%;
+    line-height: 25px;
+}
+.aboutprogramming img{
+    position:absolute;
+    left:100%;
 }
 .body0 h2{
     margin-top: 40px;
     text-align: center;
 }
-.body0 span{
-    margin-left: 120px;
-}
+
 .nav{
     width:50%;
     height:60px;

@@ -37,9 +37,10 @@ html{
     top:10%;
 }
 .aboutprogramming{
+    width:80%;
     position: absolute;
     top:50%;
-    line-height: 25px;
+    line-height: 30px;
 }
 .aboutprogramming img{
     position:absolute;

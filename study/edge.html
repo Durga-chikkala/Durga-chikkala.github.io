@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Computing</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+        }
+        h1{
+            font-size: 48px;
+            text-align: center;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        .container{
+            
+            width:60%;
+            height:100%;
+            margin: auto;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            line-height: 25px;
+            
+        }
+        img{
+            width:100%;
+            height:60vh;
+        }
+        .inside{
+          width:40%;
+          height:30vh;
+        
+        }
+        p{
+            margin-top: 20px;
+        }
+        .images{
+            width:100%;
+            height:100vh;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .examplerow{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            height: 100vh;
+            margin-top: 20px;
+            justify-content: space-between;
+
+        }
+        .examplecol{
+            
+            width:90%;
+            height:140px;
+            margin:auto;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 20px #ccc,
+                         -10px -10px 20px #fff;
+        }
+        .roadmap{
+           position: relative;
+           width:100%;
+           height:80vh;
+           display: flex;
+           align-items: center;
+           justify-content:center ;
+
+        }
+        .btn2{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            right:5%;
+            cursor: pointer;
+           
+
+        }
+        .imgg{
+            width:100%;
+            height:50vh;
+            display: flex;
+           align-items: center;
+           justify-content:center ;
+        }
+        
+        .btn1{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            left:5%;
+            cursor: pointer;
+            border-width:3px ;
+            border-color: linear-gradient(to left,#ff4432,#ff);
+        }
+        iframe{
+           width:80%;
+           height:50%; 
+        }
+        h2{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .test{
+            width:50%;
+            height:80vh;
+            background: blanchedalmond;
+            margin: auto;
+            position: fixed;
+            z-index: 10;
+            left:50%;
+            top:-80%;
+            transform: translateX(-50%);
+            transition: 1s;
+        }
+        .test.active{
+            top:0%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="test" id="test">
+        <div class="question">
+            <h5>1.What is mean?</h5>
+
+        </div>
+    </div>
+    <h1>Edge Computing</h1>
+    <div class="btn">
+        <button onclick="taketest()" class="btn1">Take test</button>
+        <button class="btn2"> Go to Course</button>
+    </div>
+ 
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Edge_computing_infrastructure.png">
+        <p>During the early part of the 21st century, cloud computing was considered the next big thing. In cloud computing, data is uploaded to a centralised repository that may access it regardless of location. Cloud Computing began to be used in commercial devices only close to 2010. By the time it was 2020, cloud computing had become a prevalent technology.
+
+            In just about a decade, cloud computing had turned from being an esoteric term to being a part of a few devices in almost everybody’s house. In 2021, cloud computing is no longer among the top technology trends but rather a thing of the past..</p><br>
+           <div class="imgg">
+            <img class="inside" src="https://www.navixy.com/wp-content/uploads/2019/11/edge-computing-for-fleet.png">
+        </div>
+            <p>The next step after cloud computing is edge computing. It is another rising new technology in 2021 which is very similar to cloud computing, except that data is not stored in a centralised repository. In areas where network access might be difficult or impossible, cloud computing is challenging since you can no longer access the repository where your data is stored. What edge computing does is transfer data closer to the location where it needs to be used.
+
+                Edge computing has excellent applications in the Internet of Things devices. As far as IoT is concerned, a physical device you need to control with your smartphone should not need to access data from a centralised repository that might be thousands of kilometres away. Instead, data should stay as close to the device as possible.
+                
+                Edge computing allows the data to remain at the ‘edge’ of the cloud and the device for processing so that commands can be followed through in a smaller amount of time.
+                
+                Edge computing jobs have only begun to grow with IoT devices’ proliferation over the past few years. As the number of these devices increases, edge computing roles are likely to become more prevalent and lucrative, placing it firmly among the top technology trends of 2021. </p>
+        
+        </div>
+  
+   
+    <h2>What is Edge Computing?</h2>
+    <div class="roadmap">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cEOUeItHDdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+       function taketest()
+       {
+           var test=document.querySelector(".test");
+           test.classList.toggle("active");
+
+       }
+    </script>
+   
+</body>
+</html>

@@ -18,3 +18,11 @@ function Dashboard()
 {
     location.href="dashboard.html";
 }
+function ds()
+{
+    location.href="datascience.html";
+}
+function fullstack()
+{
+    location.href="fullstack.html";
+}

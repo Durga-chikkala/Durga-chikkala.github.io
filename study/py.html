@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Marcellus&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+        }
+        h1{
+            font-size: 48px;
+            text-align: center;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        .container{
+            
+            width:60%;
+            height:100%;
+            margin: auto;
+            font-family: 'Lobster Two', cursive;
+            font-family: 'Marcellus', serif;
+            line-height: 25px;
+            
+        }
+        img{
+            width:100%;
+            height:60vh;
+        }
+        .inside{
+          width:40%;
+          height:30vh;
+        
+        }
+        p{
+            margin-top: 20px;
+        }
+        .images{
+            width:100%;
+            height:100vh;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .examplerow{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            height: 100vh;
+            margin-top: 20px;
+            justify-content: space-between;
+
+        }
+        .examplecol{
+            
+            width:90%;
+            height:140px;
+            margin:auto;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 20px #ccc,
+                         -10px -10px 20px #fff;
+        }
+        .roadmap{
+           position: relative;
+           width:100%;
+           height:80vh;
+           display: flex;
+           align-items: center;
+           justify-content:center ;
+
+        }
+        .btn2{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            right:5%;
+            cursor: pointer;
+           
+
+        }
+        .imgg{
+            width:100%;
+            height:50vh;
+            display: flex;
+           align-items: center;
+           justify-content:center ;
+        }
+        
+        .btn1{
+            width: 10%;
+            height:40px;
+            position: absolute;
+            top:5%;
+            left:5%;
+            cursor: pointer;
+            border-width:3px ;
+            border-color: linear-gradient(to left,#ff4432,#ff);
+        }
+        iframe{
+           width:80%;
+           height:50%; 
+        }
+        h2{
+            margin-top: 40px;
+            text-align: center;
+        }
+        .test{
+            width:50%;
+            height:80vh;
+            background: blanchedalmond;
+            margin: auto;
+            position: fixed;
+            z-index: 10;
+            left:50%;
+            top:-80%;
+            transform: translateX(-50%);
+            transition: 1s;
+        }
+        .test.active{
+            top:0%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="test" id="test">
+        <div class="question">
+            <h5>1.What is mean?</h5>
+
+        </div>
+    </div>
+    <h1>Python</h1>
+    <div class="btn">
+        <button onclick="taketest()" class="btn1">Take test</button>
+        <button class="btn2"> Go to Course</button>
+    </div>
+ 
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_ID7MuyUQkf0HDeOt-rQRJzcFwsbwZcumA&usqp=CAU">
+        <p>Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p><br>
+           <div class="imgg">
+            <img class="inside" src="data:image/jpeg;base64,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">
+        </div>
+            <p>Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.
+
+                Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible and much Python 2 code does not run unmodified on Python 3. Python 2 was discontinued with version 2.7.18 in 2020.</p>
+        
+        </div>
+  
+   
+    <h2>Roadmap for Python?</h2>
+    <div class="roadmap">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bPrmA1SEN2k?start=3" title="YouTube video player" frameborder="0" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+       function taketest()
+       {
+           var test=document.querySelector(".test");
+           test.classList.toggle("active");
+
+       }
+    </script>
+   
+</body>
+</html>

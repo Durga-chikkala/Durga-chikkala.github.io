@@ -375,10 +375,11 @@ button{
     background-color:white;
     color:black;;
 }
-.fa-envelope{
+.fa-linkedin-in{
     color:coral;
+    font-size: 24px;
 }
-.fa-envelope:hover{
-    background-color:rgb(184, 181, 23);
+.fa-linkedin-in:hover{
+    background-color:rgb(243, 121, 8);
     color:rgb(15, 3, 3);;
 }

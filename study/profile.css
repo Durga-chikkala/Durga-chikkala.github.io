@@ -186,14 +186,14 @@ padding: 0px;
     }
     .mobilenav{
         display:flex;
-        position: absolute;
+        position: fixed;
         top:-260px;
         cursor:pointer;
         transition: 1s;
         z-index: 10;
     }
     .mobilenav.active{
-        position: fixed;
+        position: sticky;
         top:60px;
     }
     .mobilenav ul{

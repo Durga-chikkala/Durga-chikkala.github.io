@@ -5,10 +5,8 @@
     font-family: 'Marcellus', serif;
 }
 .body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
-
 }
 .header{
     width:100%;
@@ -56,7 +54,6 @@
     transition: 1s;
 }
 .headingtext{
-  
     position: absolute;
     left:20%;
     top:50%;
@@ -169,4 +166,42 @@
     justify-content: space-around;
     align-items: center;
     font-size: 14px;
+}
+@media(max-width:480px) {
+    .main{
+        width: 90%;
+        margin-left: 20px;
+        height: 90vh;
+    }
+    .side{
+        width:90%;
+        margin-left: 20px;
+        height:90vh;
+    }
+    .column{
+        width:90px;
+        height:120px;
+    }
+    h3{
+        font-size: 0.7rem;
+    }
+    .column h5{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .body1{
+        display: flex;
+        flex-direction: column;
+    }
+    .time{
+        font-size: 1rem;
+    }
+    .side .time{
+        width: 120px;
+        height: 120px;
+    }
+    .coursehead{
+        font-size: 0.5rem;
+
+    }
 }

@@ -609,3 +609,12 @@ html{
 
     }
 }
+@media(max-width:480px) {
+    h1{
+        font-size: 10rem;
+        color:green;
+    }
+    .body0 img{
+        width:1px;
+    }
+}

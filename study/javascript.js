@@ -26,3 +26,8 @@ function fullstack()
 {
     location.href="fullstack.html";
 }
+function togglebar()
+{
+    var k=document.querySelector(".mobilenav");
+    k.classList.toggle("active");
+}

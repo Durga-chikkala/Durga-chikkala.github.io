@@ -8,13 +8,16 @@ padding: 0px;
     background-color:#252954;
     position: relative;
     color:white;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Marcellus', serif;
+    overflow: hidden;
 }
 .nav{
     width:50%;
     height:60px;
     position: absolute;
     right: 0px;
-    top:10px;
+    top:1rem;
     background: #252954;
     
 }
@@ -31,6 +34,7 @@ padding: 0px;
     position: relative;
     cursor: pointer;
     color:white;
+    font-size: 1rem;
 }
 .nav ul li::after{
     content: "";
@@ -38,7 +42,7 @@ padding: 0px;
     height:3px;
     display: block;
     position: absolute;
-    top:20px;
+    top:1.4rem;
     background-color: #f44336;
 }
 .nav ul li:hover::after{
@@ -59,7 +63,7 @@ padding: 0px;
    
     font-family: 'Lobster Two', cursive;
     font-family: 'Marcellus', serif;
-    font-size: 64px;
+    font-size: 6rem;
     margin-bottom: 40px;
 }
 
@@ -69,7 +73,7 @@ padding: 0px;
     top:10px;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 .logo img{
@@ -93,7 +97,7 @@ padding: 0px;
    border-radius: 10px;
 }
 .pic{
-    width:30%;
+    width:25vw;
     height:50vh;
     position: absolute;
     top:25%;
@@ -127,6 +131,31 @@ padding: 0px;
     cursor: pointer;
 
 }
+.menu{
+    display: none;
+}
+.mobilenav{
+    width:100%;
+    height:230px;
+    background-color: rgb(22, 13, 71);
+    display: none;
+}
+.mobilenav ul{
+ display: flex; 
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width:100%;
+}
+.mobilenav ul li{
+     width:100%;
+    display: flex; 
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 .body1 .main{
     width:75%;
     height:90vh;
@@ -150,4 +179,97 @@ padding: 0px;
 .grade h3{
     font-size: 32px;
 
+}
+@media (max-width:480px) {
+    .nav{
+        display: none;
+    }
+    .mobilenav{
+        display:flex;
+        position: absolute;
+        top:-260px;
+        cursor:pointer;
+        transition: 1s;
+        z-index: 10;
+    }
+    .mobilenav.active{
+        position: fixed;
+        top:60px;
+    }
+    .mobilenav ul{
+        display: flex; 
+         flex-direction: column;
+         align-items: center;
+         list-style-type: none;
+        margin:auto;
+    }
+    .menu{
+        display:flex ;
+        width:30px;
+        justify-content: center;
+        align-items: center;
+        height:30px;
+        background-color: rgb(225, 215, 250);
+        position: absolute;
+        right:30px;
+        top:15px;
+        
+    }
+    .logo{
+        height: 60px;
+        margin-left: 0px;
+        width:100%;
+        background-color: #05162c;
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+    .pic{
+        width:35vw;
+        height:20vh;
+        position: absolute;
+        top:15%;
+        right:5%;
+        border-radius: 50%;
+    }
+    .header h1{
+   
+        font-family: 'Lobster Two', cursive;
+        font-family: 'Marcellus', serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .body1{
+        width:95%;
+    }
+    .body1 .subpart{
+        width:33%;
+        margin-top: 50px;
+        height:90vh;
+        box-sizing: border-box;
+        box-shadow:  10px 10px 22px #a8a8a8,
+        -10px -10px 22px #ffffff;
+    }
+    
+    .body1 .subpart ul{
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .body1 .subpart ul li{
+        cursor: pointer;
+        font-size:0.8rem;
+        
+    
+    }
+    .headingtext{
+        text-align: center;
+    }
+    .headingtext h3{
+        font-size: 0.8rem;
+    }
 }

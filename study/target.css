@@ -107,12 +107,12 @@
 }
 .heading h1{
     position: absolute;
-    top:50%;
+    top:80%;
     font-size: 64PX;
     left:70%;
     cursor: pointer;
     letter-spacing: 12px;
-    transform: translate(-70%,-50%);
+    transform: translate(-70%,-80%);
     color: white;
     font-family: 'Lobster Two', cursive;
     font-family: 'Marcellus', serif;
@@ -287,6 +287,31 @@ input::placeholder{
 
     
 }
+.menu{
+    display: none;
+}
+.mobilenav{
+    width:100%;
+    height:230px;
+    background-color: rgb(22, 13, 71);
+    display: none;
+}
+.mobilenav ul{
+ display: flex; 
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width:100%;
+}
+.mobilenav ul li{
+     width:100%;
+    display: flex; 
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 .social ul li{
     width:30px;
     height:30px;
@@ -339,4 +364,69 @@ input::placeholder{
 .fa-envelope:hover{
     background-color:rgb(184, 181, 23);
     color:rgb(15, 3, 3);;
+}
+@media (max-width:480px) {
+    .nav{
+        display: none;
+    }
+    .mobilenav{
+        display:flex;
+        position: fixed;
+        top:-260px;
+        cursor:pointer;
+        transition: 1s;
+        z-index: 10;
+    }
+    .mobilenav.active{
+        position: sticky;
+        top:60px;
+    }
+    .mobilenav ul{
+        display: flex; 
+         flex-direction: column;
+         align-items: center;
+         list-style-type: none;
+        margin:auto;
+    }
+    .menu{
+        display:flex ;
+        width:30px;
+        justify-content: center;
+        align-items: center;
+        height:30px;
+        background-color: rgb(225, 215, 250);
+        position: absolute;
+        right:30px;
+        top:15px;
+        
+    }
+    .logo{
+        height: 60px;
+        margin-left: 0px;
+        width:100%;
+        background-color: #05162c;
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+    .body2 h3{
+        font-size: 1.2rem;
+    }
+    .body2 h2{
+        text-align: center;
+    }
+    .body1 .row{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .body1 h2{
+        font-size: 1rem;
+        left:45%;
+    }
+    .query{
+        width:50%;
+    }
+    .body2 .row{
+        display: none;
+    }
 }

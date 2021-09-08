@@ -244,6 +244,31 @@ html{
     
 
 }
+.menu{
+    display: none;
+}
+.mobilenav{
+    width:100%;
+    height:230px;
+    background-color: rgb(22, 13, 71);
+    display: none;
+}
+.mobilenav ul{
+ display: none; 
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width:100%;
+}
+.mobilenav ul li{
+     width:100%;
+    display: flex; 
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
 .quotescontent:nth-child(1)
 {
@@ -382,4 +407,50 @@ button{
 .fa-linkedin-in:hover{
     background-color:rgb(243, 121, 8);
     color:rgb(15, 3, 3);;
+}
+@media(max-width:480px) {
+    .nav{
+        display: none;
+    }
+    .mobilenav{
+        display:flex;
+        position: fixed;
+        top:-260px;
+        cursor:pointer;
+        transition: 1s;
+        z-index: 10;
+    }
+    .mobilenav.active{
+        position: fixed;
+        top:60px;
+    }
+    .mobilenav ul{
+        display: flex; 
+         flex-direction: column;
+         align-items: center;
+         list-style-type: none;
+        margin:auto;
+    }
+    .menu{
+        display:flex ;
+        width:30px;
+        justify-content: center;
+        align-items: center;
+        height:30px;
+        background-color: rgb(231, 224, 247);
+        position: absolute;
+        right:30px;
+        top:15px;
+        color:white;
+        
+    }
+    .logo{
+        height: 60px;
+        margin-left: 0px;
+        width:100%;
+        background-color: #05162c;
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
 }

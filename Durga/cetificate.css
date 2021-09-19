@@ -196,3 +196,11 @@ h4{
 {
     margin-bottom: 80px;
 }
+@media(max-width:480px)
+{
+    .row img{
+        height:30vh;
+        width: 90%;
+    }
+
+}

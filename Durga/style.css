@@ -16,7 +16,6 @@
     border:none;
     font-weight: bold;
     outline: none;
-
 }
 .sidebar{
     height:100vh;
@@ -110,61 +109,57 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: #8db596;
+    background: linear-gradient(to top, #2787EA,#1c67D2,#01B0D3);
     justify-content: center;
   
     align-items: center;
 }
-.word{
-    color:#8db596;
-    font-weight: 900;
-    line-height: 45px;
-}
-.word span{
-    font-size: 4rem;
-    display: inline-block;
-    animation: move 3s ease-in-out infinite;
-}
+
+
 .html{
     scroll-behavior: smooth;
-}
-@keyframes move {
-    0%{
-        transform: translate(-30%,0%);
-    }
-    25%{
-        transform: translate(0%,0%);
-    }
-    50%{
-        text-shadow: 0px 25px 50px rgb(0, 0,0,0.9);
-    }
-    75%{
-        transform:translate(0%,0%)
-    }
-
-    100%{
-        transform: translate(30%,0%);
-    }
-}
-.word span:nth-child(2){
-    animation-delay: .5s;
-}
-.word span:nth-child(3){
-    animation-delay: 1s;
-}
-.word span:nth-child(4){
-    animation-delay: 1.5s;
 }
 .study{
     margin:auto;
     width:80%;
     text-align: center;
 }
+.name h1{
+    font-size: 3em;
+    text-decoration: none;
+    position: absolute;
+    left:10%;
+    top:40%;
+    z-index: 1;
+}
+.name img{
+    position: absolute;
+    right:10%;
+    
+    height:70%;
+}
+.explore{
+    width:15%;
+    position: absolute;
+    top:60%;
+    left:15%;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.8s;
+    font-size: 12px;
+    border: 1px solid black;
+}
+.explore:hover{
+    background: #f44332;
+    border: 1px solid #db2c06;
+    cursor: pointer;
+}
 h1{
     text-align: center;
     margin-top: 3rem;
-    text-decoration: underline;
+    
     margin-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
 }
 .row{
 
@@ -181,7 +176,8 @@ h1{
     flex-direction: row;
     box-sizing: border-box;
     transition: 0.6s;
-    box-shadow: 0px 0px 20px rgb(0, 0,0,0.2);
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
     cursor: pointer;
     font-size: 1rem;
     
@@ -189,13 +185,19 @@ h1{
 .column h2{
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
+    font-family: 'Raleway', sans-serif;
 }
 .column:hover{
    box-shadow: 0px 0px 10px rgb(0, 0,0,0.9);
 }
+.column p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
 .achievements{
     width:80%;
     margin:auto;
+    font-family: 'Raleway', sans-serif;
    
 }
 .achievements h2{
@@ -223,8 +225,12 @@ h1{
     font-size: 1rem;
     justify-content: center;
     flex-direction: column;
+    
 }
-
+.column1 p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
 .column1 .tag{
     border: 2px solid black;
     text-decoration: none;
@@ -293,6 +299,7 @@ h1{
     position: absolute;
     left:55%;
     margin-top: 2px;
+    
     transform: translateX(-50%);
     transition: 1s;
 
@@ -305,13 +312,8 @@ h1{
 .side a{
     text-decoration: none;
 }
-.side p{
-    position: absolute;
-    top:10px;
-    font-size: 1rem;
-}
 .side i{
-    margin: 10px;
+   margin:10px;
     cursor: pointer;
     font-size: 1.5rem;
     box-sizing: border-box;
@@ -521,6 +523,27 @@ h1{
 }
 @media (max-width:700px)
 {
+    .name{
+
+    }
+    .name h1{
+        font-size: 54px;
+        top:50%;
+        left:5%;
+    }
+    .explore{
+        width:200px;
+        top:80%;
+        left: 25%;
+        height: 40px;
+    }
+    .name img{
+        position: absolute;
+        top:15%;
+        right:0px;
+        width:300px;
+        height:250px;
+    }
     .row2{
         flex-direction: column;
     }
@@ -711,4 +734,53 @@ h1{
     top:-20px;
     background-color: #030302;
     transform: rotateX(45deg) rotateY(-0deg);
+}
+
+.line{
+    width:98vw;
+    height: 1px;
+    background: #030302;
+    position: absolute;
+    bottom:50%;
+}
+.footer input{
+    width:250px;
+    height:30px;
+
+}
+label{
+    width:60px;
+    height: 30px;
+    background: white;
+    position: relative;
+    left:120px;
+
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);   
+  
+    
+   
+   
+}
+label::before{
+    content:"";
+    position:relative;
+    width:15px;
+    height:15px;
+    background:white;
+    color:rgb(248, 245, 245);
+    
+    left:-8px;
+    transform: rotate(45deg);
+
+}
+.side a{
+    display: flex;
+    justify-content: center;
 }

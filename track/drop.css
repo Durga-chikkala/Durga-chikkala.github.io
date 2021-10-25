@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+button{
+    padding:10px;
+    border:5px dotted blue;
+}
+.durga{
+    position: sticky;
+    top:20px;
+    bottom:50px;
+    height:100px;
+    background: #f33221;
+}
+.d{
+    height: 100vh;
+}
+.full{
+    display: flex;
+
+}
+.part1{
+    width:50%;
+    height:50vh;
+    background: red;
+
+}
+.part2{
+    width:50%;
+    height:50vh;
+    background: blue;
+}
+@media(max-width:600px)
+{
+    .full{
+        flex-direction: column;
+        
+    }
+    .part2{
+        background: pink;
+        width:100%;
+
+    }
+    .part1{
+        width:100%;
+    }
+}
+@media(orientation:landscape)
+{
+
+}
+.g{
+    width:200px;
+    height:200px;
+    border: 1px solid black;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+.g:hover
+{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+}
+.neo{
+    height:300px;
+    width:300px;
+    position: relative;
+    top:300px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color:#E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+
+}

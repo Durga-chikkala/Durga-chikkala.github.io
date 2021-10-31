@@ -114,8 +114,52 @@ body{
   
     align-items: center;
 }
+.info{
+    position: relative;
+}
+.info .text1 .h{
+    width:160px;
+    height:40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+}
+.text1 p{
+    display: none;
 
-
+}
+.text1 iframe.active{
+    display: block;
+}
+.text1 iframe{
+    display:none;
+    position: absolute;
+    top:60%;
+    left:0%;
+    height:350px;
+    width:600px;
+}
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:50%;
+    height:200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) 
+}
+.info{
+    width:100%;
+    height:100vh;
+    background: #EBECF0;
+}
 .html{
     scroll-behavior: smooth;
 }
@@ -618,6 +662,9 @@ h1{
     .clock .sec, .sc{
         width:100px;
         height:100px;
+    }
+    .text1{
+        flex-direction: column;
     }
     .hr::before{
         content: "";

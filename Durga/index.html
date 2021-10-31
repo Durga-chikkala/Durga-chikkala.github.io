@@ -44,7 +44,27 @@
  
   
     </div>
-
+<div class="info">
+    <img src="">
+    <div class="text1">
+        <div class="in">
+            <div class="h">Self introduction</div>
+            <p>Hii Everyone This is Durga chikkala a B.tech graduate in cse department.
+                
+            </p>
+        </div>
+        <div class="in">
+            <div class="h" onclick="resumeopen()">Resume</div>
+            <iframe id="iframe" src="DurgaResume.pdf" width="100%" height="100vh"></iframe>
+        </div>
+        <div class="in">
+            <div class="h">Preparation Tips</div>
+            <p>Hii Everyone This is Durga chikkala a B.tech graduate in cse department.
+                
+            </p>
+        </div>
+    </div>
+</div>
 <div class="study">
     <h1>Education</h1>
 <div class="row">
@@ -174,6 +194,12 @@
             sidebar.classList.toggle("active");
                 
             
+        }
+        function resumeopen()
+        {
+            const frame=document.querySelector("#iframe");
+            frame.classList.toggle("active");
+                
         }
         function otp(obj)
         {

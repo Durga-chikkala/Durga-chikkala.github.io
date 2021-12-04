@@ -6,8 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="donar.css">
+    
     <title>Document</title>
+    <style>
+        .part2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:100vh;
+        }
+        .circle{
+            width:200px;
+            height:200px;
+            border: 20px solid green;
+            border-radius: 50%;
+            margin-left: 50px;
+        }
+        @media(max-width:480px)
+        {
+            .circle{
+                margin-left: 0px;
+                
+            }
+            .part2{
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="head">
@@ -43,10 +69,10 @@
                 <a class="navbar-brand" href="Donar.html">Posts</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="list.html"><u>List of Houses</u></a>
+                    <a class="nav-link active" aria-current="page" href="list.html">List of Houses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="amount.html">Amount</a>
+                    <a class="nav-link" href="amount.html"><u>Amount</u></a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -56,6 +82,11 @@
               </div>
             </div>
           </nav>
+    </div>
+    <div class="part2">
+        <h1>Target of this Month</h1>
+        <div class="circle"></div>
+        <h1>100000</h1>
     </div>
     </body>
     </html>

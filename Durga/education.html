@@ -120,12 +120,12 @@
    
     <div class="row2">
         
-        <div class="col">
-            <div class="open">
+        <div class="col" onmouseover="mOver(this)" onmouseout="mOut(this)">
+            <div class="open" id="open">
             <img src="https://blog.techiehunter.org/wp-content/uploads/2018/08/700012_a499_9.jpg" alt="" width=300px>
             <h2>C Programming</h2>
         </div>
-            <div class="close">
+            <div class="close" id="close">
                 <p>C is the basic programming language to start with and I have a good Knowledge on c programming<br>
                 Basics of C,Arrays,Structure,File-handling ,Functions,Dynamic memory allocations are some of<br>
                 most important Concepts in C</p>
@@ -238,6 +238,12 @@
             sidebar.classList.toggle("active");
                 
             
+        }
+        function mOut(obj)
+        {
+            obj
+             
+
         }
     </script>
 </body>

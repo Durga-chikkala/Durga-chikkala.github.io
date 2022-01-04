@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layer{
+            width:100px;
+            height: 40px;
+            background: skyblue;
+           position: relative;
+            border-radius:20px;
+        }
+        .circle::before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+        .circle{
+            width:30px;
+            height:30px;
+            border-radius: 50%;
+            background: green;
+            cursor: pointer;
+            position: absolute;
+            top:0px;
+            left:0px;
+            bottom:0px;
+            right:0px;
+        }
+        input{
+            width:0;
+            height: 0;
+            opacity: 0;
+          
+        }
+        input:checked + .circle{
+            background-color: #2196F3c4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="layer">
+        
+            <input type="checkbox">
+            <div class="circle"></div>
+    </div>
+</body>
+</html>

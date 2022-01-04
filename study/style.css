@@ -19,18 +19,24 @@ html{
      text-align: center;
      position: relative;
 }
-.computer{
-    float:left;
-    margin-right: 30px;
+.computer,.aboutprogramming img{
+    width:15%;
+    position: absolute;
+    left:0px;
+    margin-right: 10px;
 }
 .firstletter{
     font-size: 28px;
+    margin-left: 10px;
 }
 
 .texthead{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     text-align: left;
+    position: relative;
+    left:170px;
+    
 }
 .aboutcomputer{
     position: absolute;
@@ -41,10 +47,6 @@ html{
     position: absolute;
     top:50%;
     line-height: 30px;
-}
-.aboutprogramming img{
-    position:absolute;
-    left:100%;
 }
 .body0 h2{
     margin-top: 40px;
@@ -151,14 +153,15 @@ html{
     width:15px;
 }
 ::-webkit-scrollbar-track{
-    background:linear-gradient(to bottom ,rgb(13, 56, 73),#1877f2,#1877f2,#1877f2);
+    background:linear-gradient(to bottom ,rgb(13, 56, 73),#18d1f2,#1877f2,#1877f2);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: red;
+    background-color: rgb(20, 229, 236);
    border-radius: 10px;
 }
 ::-webkit-scrollbar-corner{
+    background-color: #fff;
 
 }
 @keyframes mov {
@@ -366,6 +369,7 @@ button{
     border-radius: 50%;
     cursor:pointer;
 }
+
 .fas,.fab{
     font-size: 26px;
    
@@ -407,6 +411,14 @@ button{
 .fa-linkedin-in:hover{
     background-color:rgb(243, 121, 8);
     color:rgb(15, 3, 3);;
+}
+.fa-list-ol{
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+li:nth-child(5):hover{
+    font-weight: bold;
 }
 @media(max-width:480px) {
     .nav{

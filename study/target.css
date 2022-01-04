@@ -296,6 +296,15 @@ input::placeholder{
     background-color: rgb(22, 13, 71);
     display: none;
 }
+
+.fa-list-ol{
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+li:nth-child(5):hover{
+    font-weight: bold;
+}
 .mobilenav ul{
  display: flex; 
   flex-direction: column;
@@ -364,6 +373,14 @@ input::placeholder{
 .fa-envelope:hover{
     background-color:rgb(184, 181, 23);
     color:rgb(15, 3, 3);;
+}
+.fa-list-ol{
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+li:nth-child(5):hover{
+    font-weight: bold;
 }
 @media (max-width:480px) {
     .nav{

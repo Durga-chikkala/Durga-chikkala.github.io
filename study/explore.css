@@ -1,0 +1,194 @@
+.head{
+    width:100%;
+    height: 95vh;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+   
+}
+.img{
+    width:85%;
+    height:50vh;
+    margin: auto;
+
+}
+.head img{
+    width:100%;
+    height:50vh;
+    margin: auto;
+    
+}
+.text h1{
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.text p,h6,.text1{
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+   
+    text-align: center;
+
+
+}
+p{
+    width:99%;
+}
+body{
+    height:100%;
+    width: 100%;
+    
+}
+h6{
+    position: absolute;
+    top:71%;
+    left:50%;
+    transform: translate(-50%,-71%);
+    font-size: 16px;
+}
+
+.time{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-90%);
+
+
+
+}
+.enroll{
+    width:80px;
+    height:80px;
+    background: rgb(245, 191, 15);
+    position:absolute;
+    top:90%;
+    left:95%;
+    transform: translate(-90%,-95%);
+    font-size: 16px;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.enroll:focus{
+    outline-color: blue;
+}
+.body{
+   
+    width:100%;
+    height:90vh;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+}
+.topics{
+    width:50%;
+    height:100%;
+}
+ul{    
+    width:80%; 
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    left:0px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px black;
+}
+ul li{
+    list-style: none;        
+    cursor: pointer;
+    
+    width:100%;
+    
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.company{
+    width:50%;
+    height:100%;
+   
+}
+.company h1,.after h1{
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.company img{
+    width:90%;
+    height:70vh;
+}
+.after,.video{
+    width:100%;
+    height:90vh;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+}
+.after h1{
+    text-align: center;
+}
+.video{
+   
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    overflow: hidden;
+
+}
+.demo{
+    width:98%;
+    height:210px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.text1{
+    width:70%;
+    font-size: 13px;
+    margin: auto;
+}
+.after img{
+    width:200px;
+    height:200px;
+}
+.row{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

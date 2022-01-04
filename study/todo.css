@@ -1,0 +1,112 @@
+.custom{
+    padding:4%;
+    text-align:center;
+    
+}
+.form-control{
+    width:60%;
+}
+.menu{
+    width:35px;
+    height:4px;
+    margin: 3px 0px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color:darksalmon;
+    transform: translate(1050px,-120px);
+    color:black;
+}
+h6{
+    position: relative;
+    top:30px;
+}
+#myUL{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+h1{
+    position: relative;
+    top:30px;
+    color:rgb(7, 1, 1);
+}
+h1::after{
+    content: "";
+    width:0px;
+    height:2px;
+    background:linear-gradient(to left,red,#ff3322,rgb(219, 83, 83));
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+h1:hover::after{
+    width:170px;
+}
+.form-inline{
+    width:100%;
+}
+button{
+    position: relative;
+    top:100px;
+}
+input{
+    position: relative;
+    top:100px;
+    width:40%;
+    border-radius: 10px;
+    height:40px;
+}
+input:focus{
+    border:2px solid rgb(38, 98, 189);
+    outline-color: aqua;
+}
+.list-group li:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px black;
+}
+.close{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.close:hover{
+    background-color: bisque;
+}
+.btn{
+    background-color: #ff4e33;
+}
+.fas{
+    color:#4e33ff;
+    position: absolute;
+    top:15px;
+    left:10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: rgb(21, 41, 155);
+   
+}
+.fas:hover{
+    box-shadow: 0 0 10px red;
+}
+.list-group-item{
+    position: relative;
+    top:100px;
+    margin-top:5px;
+}
+.list-group-item:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 2px black;
+}
+@media(max-width:480px)
+{
+    input{
+        width:80%;
+        top:70px;
+    }
+    button{
+        top:70px;
+    }
+}

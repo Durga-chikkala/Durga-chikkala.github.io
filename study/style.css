@@ -81,7 +81,7 @@ html{
     height:3px;
     display: block;
     position: absolute;
-    top:20px;
+    top:25px;
     background-color: #f44336;
 }
 .nav ul li:hover::after{

@@ -316,6 +316,13 @@ h1{
 .column1 .tag:hover{
     background-color: #f44332;
     transition:1s;
+} 
+.column1 button{
+    background:#e72c02;
+    color:white;
+    outline: none;
+    border: 2px solid rgb(45, 240, 6);
+    cursor: pointer;
 }
 .contact{
     width:100%;

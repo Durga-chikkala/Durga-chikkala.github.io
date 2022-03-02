@@ -6,7 +6,7 @@
 .sidebar{
     height:100vh;
     width: 100%;
-    background:antiquewhite;
+    background:linear-gradient(to left,rgb(17, 73, 90),rgb(15, 107, 134),rgb(6, 173, 224));
     background-position: center;
     padding: 10px;
     position: fixed;
@@ -17,6 +17,7 @@
     align-items: center;
     z-index: 20;
     font-size: 18px;
+color: #f44332;
    
 }
 .sidebar{
@@ -38,7 +39,7 @@
 }
 .fas,.fab{
     font-size: 28px;
-    color:rgb(2, 4, 5);
+    color:rgb(2, 9, 12);
 }
 .sidebar ul {
     cursor: pointer;
@@ -56,7 +57,7 @@
     width: 100%;
     text-align: left;
     height:60px;
-    
+    color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 22px;   
 }
@@ -180,6 +181,7 @@
     transition: 0.8s;
     font-size: 12px;
     border: 1px solid black;
+   
 }
 .explore:hover{
     background: #f44332;
@@ -255,10 +257,15 @@ h1{
    box-shadow: 0px 0px 10px rgb(0, 0,0,0.9);
 }
 .course{
-    width:80%;
+    width:90%;
     margin: auto;
     padding: 0;
-    background-color: whitesmoke;
+   
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  26px 26px 52px #9b9b9b,
+                -26px -26px 52px #ffffff;
   
 }
 .row2{
@@ -291,7 +298,12 @@ h1{
     border-radius: 10px;
     padding: 10px;
     font-size: 1rem;
+    visibility: hidden;
     
+}
+.col:hover p {
+    visibility: visible;
+    color: white;
 }
 #close{
     position: absolute;
@@ -420,5 +432,7 @@ h1{
         top:75%;
         left:46%;
     }
-
+    .nodejs{
+      visibility: hidden;
+    }
 }

@@ -8,7 +8,8 @@ html{
 .head{
     width:100%;
     height:100vh;
-    background-color:#b9d1df;
+    background-color:#54a2cf;
+    #b9d1df
 }
 .body0{
     width:80%;
@@ -19,35 +20,45 @@ html{
      text-align: center;
      position: relative;
 }
-.computer,.aboutprogramming img{
-    width:15%;
+.computer{
+    width:25%;
+   position: absolute;
+   top:50%;
+   left:5%;
+   transform: translate(-10%,-50%);
+}
+.teacher{
+    width:300px;
+    height:300px;
     position: absolute;
-    left:0px;
-    margin-right: 10px;
+    top:50%;
+    left:60%;
+    transform: translate(-60%,-50%);
 }
 .firstletter{
     font-size: 28px;
     margin-left: 10px;
 }
-
-.texthead{
-    font-size: 14px;
-    line-height: 30px;
+.info{
+    width:50%;
+    height:80vh;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 60px rgb(214, 214, 214),
+               -20px -20px 60px white;
+    position: absolute;
+    left:60%;
+    top:60px;
+    padding: 50px;
     text-align: left;
-    position: relative;
-    left:170px;
-    
+    overflow-y: scroll;
 }
-.aboutcomputer{
-    position: absolute;
-    top:10%;
+.texthead{
+    margin:10px;
+    text-align: justify;
 }
-.aboutprogramming{
-    width:80%;
-    position: absolute;
-    top:50%;
-    line-height: 30px;
-}
+
+
+
 .body0 h2{
     margin-top: 40px;
     text-align: center;
@@ -59,7 +70,7 @@ html{
     position: absolute;
     right: 0px;
     top:10px;
-    background: #b9d1df;;
+    background: #54a2cf;
     
 }
 .nav ul{
@@ -114,15 +125,26 @@ html{
     width:30%;
     height:400px;
     box-sizing: border-box;
-    background: #b9d1df;
-    box-shadow:  8px 8px 15px #9db2be, 
-             -2px 8px 15px #d5f0ff;
-    border: 1px solid #d5f0ff;
-    font-family: 'Lobster Two', cursive;
-    font-family: 'Marcellus', serif;
+    background: #54a2cf;
+    box-shadow:  8px 8px 15px #4a96c2, 
+             -2px 8px 15px #53a3ce;
+    border: 1px solid #467e9c;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Battambang', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Serif', serif;
+   
+   
     border-radius: 20px;
     padding: 20px 20px;
     line-height: 25px;
+    color:rgb(8, 7, 7);
+    font-weight:600;
+    text-align: justify;
 }
 .h1 img{
     background: #f44336;
@@ -150,14 +172,14 @@ html{
     
 }
 ::-webkit-scrollbar{
-    width:15px;
+    width:7px;
 }
 ::-webkit-scrollbar-track{
-    background:linear-gradient(to bottom ,rgb(13, 56, 73),#18d1f2,#1877f2,#1877f2);
+    background:linear-gradient(to bottom ,rgb(13, 56, 73),#def6fa,#dae6f5,#f9fafc);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(20, 229, 236);
+    background-color: rgb(238, 176, 4);
    border-radius: 10px;
 }
 ::-webkit-scrollbar-corner{
@@ -212,6 +234,13 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+.column:hover{
+    transform: scale(1.2);
+    box-shadow:  20px 20px 40px #a8a8a8,
+    -20px -20px 40px #ffffff;
+
 }
 .quotes{
    width:90%;
@@ -221,24 +250,26 @@ html{
    justify-content: space-between;
    position: relative;
    margin: auto;
+   background-color: white;
 }
 .quotescontent {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width:60%;
-    height:110px;
+    height:115px;
     margin:auto;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 10px 10px 20px #ccc,
-                -10px -10px 20px #fff ;
+    background-color: rgb(248, 246, 246);
+    box-shadow: 20px 20px 60px #ccc,
+                -20px -20px 60px #fff ;
 }
 .quotescontent img{
     width:100px;
     height:90px;
     border-radius: 50%;
-    border: 2px solid black;
+    
     border-left:none;
     border-right: none;
     box-sizing: border-box;

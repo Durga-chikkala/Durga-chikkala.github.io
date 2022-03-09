@@ -31,3 +31,6 @@ function togglebar()
     var k=document.querySelector(".mobilenav");
     k.classList.toggle("active");
 }
+AOS.init({
+    duration:1000,
+});

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+           
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height:100vh;
+        }
+        .login{
+            width:25%;
+            height:450px;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction:column ;
+            justify-content: space-evenly;
+            box-shadow: 40px 40px 60px rgb(205, 206, 206),
+            -40px -40px 60px rgb(210, 212, 214);
+            
+        }
+        input{
+            width:60%;
+            height:35px;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            margin: auto;
+            border-color:white;
+             border:none;
+            box-sizing: border-box;
+            box-shadow: 40px 40px 60px rgb(194, 196, 196),
+                        -40px -40px 60px rgb(204, 205, 206);
+        }
+        input:hover{
+            border:1px solid blue;
+        }
+        button{
+            width:100px;
+            height:30px;
+            margin: auto;
+            transition: 0.5s
+        }
+        button:hover{
+            outline:none;
+            
+            background-color: #f33221;
+        }
+        span{
+            margin-bottom: 15px;
+        }
+        A{
+            color:blue;
+            
+        }
+        .options{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width:50%;
+            height:50px;
+            margin:auto;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 2px black ;
+        }
+        .fab,.fas{
+            font-size: 22px;
+            transition: 1s;
+        }
+        h3{
+            margin-top: 20px;
+        }
+        .fb,.phone,.mail{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 2px black ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+        .fb:hover{
+            background-color: blue;
+            color:white;
+        }
+        .fb:hover .fab{
+            
+            color:white;
+        }
+        .fa-facebook-square{
+            color:blue;
+        }
+        .fa-phone{
+            color:green;
+        }
+        .phone:hover{
+            background-color: green;
+        }
+        .phone:hover .fas{
+            color:white;
+        }
+        .mail:hover{
+            background-color:black ;
+        }
+        .mail:hover .fas{
+            color:white ;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Log In</h1>
+        <input type="username" placeholder="   Username">
+        <input type="password" placeholder="   Password">
+        <button type="button">Log In</button>
+        <span>Don't have an account</span><span><A href="singup.html">Register here</A></span>
+        <h3>You can also login with</h3>
+        <div class="options">
+            <div class="fb">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="mail">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.custom{
+    padding:4%;
+    text-align:center;
+    
+}
+.menu{
+    width:85px;
+    height:4px;
+    margin: 3px 0px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color:darksalmon;
+    transform: translate(1050px,-120px);
+    color:black;
+}
+#myUL{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+
+#body{
+    position: absolute;
+    top:30px;
+    color:white;
+    text-decoration: underline;
+
+}
+.form-control{
+    margin:10px;
+}
+
+.fas{
+    color:white;
+    position: absolute;
+    top:15px;
+    left:10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+   
+}
+.fas:hover{
+    box-shadow: 0 0 10px red;
+}
+h1{
+    text-align: center;
+}

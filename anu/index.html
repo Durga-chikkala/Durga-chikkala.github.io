@@ -119,14 +119,21 @@
         .mail:hover .fas{
             color:white ;
         }
+        @media(max-width:480px)
+        {
+          .login{
+
+           width:90%;
+          }
+        }
     </style>
 </head>
 <body>
     <div class="login">
-        <h1>Log In</h1>
+        <h1 >Log In</h1>
         <input type="username" placeholder="   Username">
         <input type="password" placeholder="   Password">
-        <button type="button">Log In</button>
+        <button type="button" onclick="location.replace('todo.html')">Log In</button>
         <span>Don't have an account</span><span><A href="singup.html">Register here</A></span>
         <h3>You can also login with</h3>
         <div class="options">

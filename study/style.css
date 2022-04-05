@@ -9,10 +9,9 @@ html{
     width:100%;
     height:100vh;
     background-color:#54a2cf;
-    #b9d1df
 }
 .body0{
-    width:80%;
+    width:80vw;
     margin: auto;
     height:100vh;
     font-family: 'Lobster Two', cursive;
@@ -21,7 +20,7 @@ html{
      position: relative;
 }
 .computer{
-    width:25%;
+    width:25vw;
    position: absolute;
    top:50%;
    left:5%;
@@ -36,37 +35,39 @@ html{
     transform: translate(-60%,-50%);
 }
 .firstletter{
-    font-size: 28px;
+    font-size: 3vh;
     margin-left: 10px;
 }
 .info{
-    width:50%;
-    height:80vh;
+    width:40vw;
+    height:75vh;
     box-sizing: border-box;
     box-shadow: 20px 20px 60px rgb(214, 214, 214),
                -20px -20px 60px white;
     position: absolute;
-    left:60%;
-    top:60px;
-    padding: 50px;
+    left:48vw;
+    top:15vh;
+    font-size: 2.2vh;
+    padding: 1.5vw;
     text-align: left;
     overflow-y: scroll;
 }
 .texthead{
-    margin:10px;
+    margin:2vh;
     text-align: justify;
 }
 
 
 
 .body0 h2{
-    margin-top: 40px;
+    margin-top: 2vh;
+    font-size: 4vh;
     text-align: center;
 }
 
 .nav{
-    width:50%;
-    height:60px;
+    width:50vw;
+    height:10vh;
     position: absolute;
     right: 0px;
     top:10px;
@@ -85,6 +86,7 @@ html{
 .nav ul li{
     position: relative;
     cursor: pointer;
+    font-size: 2.2vh;
 }
 .nav ul li::after{
     content: "";
@@ -106,11 +108,15 @@ html{
     align-items: center;
     
 }
+.teacher{
+    width:20vw;
+    height:40vh;
+}
 .head h1{
     font-family: 'Lobster Two', cursive;
     font-family: 'Lobster Two', cursive;
     font-family: 'Marcellus', serif;
-    font-size: 5em;
+    font-size: 10vh;
 }
 .insidehead{
     width:90%;
@@ -122,10 +128,9 @@ html{
     justify-content: space-between;
 }
 .text{
-    width:30%;
-    height:350px;
-
-    font-size: 1em;
+    width:30vw;
+    height:40vh;
+    font-size: 2.1vh;
     box-sizing: border-box;
     background: #54a2cf;
     box-shadow:  8px 8px 15px #4a96c2, 
@@ -140,8 +145,8 @@ html{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Serif', serif;
     border-radius: 20px;
-    padding: 20px 20px;
-    line-height: 25px;
+    padding: 3vh 3vh;
+    line-height: 3vh;
     color:rgb(8, 7, 7);
     font-weight:600;
     
@@ -158,13 +163,13 @@ html{
     top:10px;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 2.2vh;
     font-weight: bold;
 
 }
 .logo img{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:5vh;
     border-radius: 50%;
     cursor: pointer;
     animation: move 1s linear infinite;
@@ -172,7 +177,7 @@ html{
     
 }
 ::-webkit-scrollbar{
-    width:7px;
+    width:0.5vw;
 }
 ::-webkit-scrollbar-track{
     background:linear-gradient(to bottom ,rgb(13, 56, 73),#def6fa,#dae6f5,#f9fafc);
@@ -214,11 +219,11 @@ html{
     margin-bottom: 10px;
 }
 .body1 h2{
-    font-size: 28px;
-    margin-bottom: 110px;
+    font-size: 4vh;
+    margin-bottom:20vh;
 }
 .row{
-    margin-top: 50px;
+    margin-top: 8vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -228,13 +233,14 @@ html{
     background: #f7f5f5;
     box-shadow:  10px 10px 22px #a8a8a8,
                 -10px -10px 22px #ffffff;
-    width:25%;
-    height:80px;
+    width:25vw;
+    height:10vh;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    font-size: 2vh;
 }
 .column:hover{
     transform: scale(1.1);
@@ -243,7 +249,7 @@ html{
 
 }
 .quotes{
-   width:90%;
+   width:90vw;
    height:100vh;
    display: flex;
    flex-direction: column;
@@ -265,10 +271,11 @@ html{
     background-color: rgb(248, 246, 246);
     box-shadow: 20px 20px 60px #ccc,
                 -20px -20px 60px #fff ;
+    font-size: 2.2vh;
 }
 .quotescontent img{
-    width:15%;
-    height:90%;
+    width:5vw;
+    height:10vh;
     border-radius: 50%;
     
     border-left:none;
@@ -335,33 +342,35 @@ html{
 
 }
 .body2{
-    width:90%;
+    width:90vw;
     height:60vh;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10vh;
 
     text-align: center;
     font-family: 'Lobster Two', cursive;
     font-family: 'Marcellus', serif;
 }
+.body2 h2{
+    font-size: 3vh;
+}
 .about{
-    width:95%;
-   
+    width:94vw;
+   font-size: 2.2vh;
     margin: auto;
-    line-height: 25px;
-    margin-top: 40px;
+    margin-top: 4vh;
     font-weight: bold;
 }
 .query{
-    width:80%;
+    width:80vw;
     border-top: none;
     border-bottom:2px solid black;
     border-left:none;
     border-right: none;
     outline: none;
     
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 2.2vh;
+    margin-top: 10vh;
 }
 input::placeholder{
     text-align: center;
@@ -370,16 +379,17 @@ input::placeholder{
     font-family: 'Marcellus', serif;
 }
 button{
-    width:60px;
-    height:30px;
+    width:8vw;
+    height:5vh;
     background: cornflowerblue;
     outline: none;
     border:none;
+    font-size: 2.2vh;
 }
 .social{
-    width:200px;
+    width:25vw;
     margin:auto;
-    margin-top: 80px;
+    margin-top: 8vh;
     
 }
 .social ul{
@@ -390,8 +400,8 @@ button{
     
 }
 .social ul li{
-    width:30px;
-    height:30px;
+    width:5vw;
+    height:8vh;
     box-sizing: border-box;
     box-shadow: 10px 10px 20px #ccc,
                 -10px -10px 20px #fff;
@@ -403,15 +413,15 @@ button{
 }
 
 .fas,.fab{
-    font-size: 26px;
+    font-size: 5vh;
    
     border-radius: 50%;
 }
-.fa-instagram{
-    background-color:#c32aa3;
+.social ul li:hover{
+    background-color:#f6465d;
     color:white;
     transition: 1s;
-    box-shadow: 0 0 10px #c32aa3;
+    /* box-shadow: 0 0 10px #c32aa3; */
 }
 .fa-instagram:hover{
     color:#c32aa3;
@@ -436,9 +446,9 @@ button{
     background-color:white;
     color:black;;
 }
-.fa-linkedin-in{
+/* .fa-linkedin-in{
     color:coral;
-    font-size: 24px;
+    font-size: ;
 }
 .fa-linkedin-in:hover{
     background-color:rgb(243, 121, 8);
@@ -448,7 +458,7 @@ button{
     font-size: 14px;
     margin-right: 10px;
     
-}
+} */
 li:nth-child(5):hover{
     font-weight: bold;
 }

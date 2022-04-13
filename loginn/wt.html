@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width:100%;height:100vh;">
+    <input type="number" id="name">
+    <button onclick="myfun()">submit</button>
+    <p id="d"></p>
+    <script>
+        function myfun()
+        {
+            let k=document.getElementById("name").value;
+            document.getElementById("d").innerHTML=k;
+            
+        }
+    </script>
+</body>
+</html>

@@ -105,20 +105,6 @@ h2{
     margin-top: 40px;
     text-align: center;
 }
-.test{
-    width:50%;
-    height:80vh;
-    background: blanchedalmond;
-    margin: auto;
-    position: fixed;
-    z-index: 10;
-    left:50%;
-    top:-80%;
-    transform: translateX(-50%);
-    transition: 1s;
-}
-.test.active{
-    top:0%;
 
 }
 @media (max-width:480px) {

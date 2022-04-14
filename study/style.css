@@ -325,3 +325,33 @@ button{
     font-weight: bold;
     transition: 1s;
 }
+.img2{
+    display: none;
+}
+@media (max-width:500px){
+    .row .column{
+        height:15vh;
+        width:30vw;
+        font-size: 0.8rem;
+
+    }
+    .quotescontent{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        padding: 2rem;
+    }
+    .quotes img{
+        margin-right: 2rem;
+    }
+    .definitions-info{
+        width:70%;
+        height:60%;
+        top:10%;
+    }
+    .img2{
+        display: block;
+    }
+    .img1{
+        display: none;
+    }
+}

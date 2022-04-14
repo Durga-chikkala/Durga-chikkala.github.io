@@ -54,8 +54,8 @@ p{
 .examplecol{
     
     width:90%;
-    height:140px;
-    margin:auto;
+    height:80%;
+    margin:10px;
     box-sizing: border-box;
     box-shadow: 10px 10px 20px #ccc,
                  -10px -10px 20px #fff;
@@ -120,4 +120,22 @@ h2{
 .test.active{
     top:0%;
 
+}
+@media (max-width:480px) {
+    .container{
+        width: 90%;
+    }
+    .imgg{
+        height:40vh;
+    }
+    .container img{
+        height:40vh;
+    }
+    h2{
+        margin-top: 150px;
+    }
+    button{
+        display: none;
+    }
+    
 }

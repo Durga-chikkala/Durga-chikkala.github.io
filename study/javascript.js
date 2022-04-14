@@ -8,7 +8,7 @@ function ai()
 }
 function target()
 {
-    location.href="target.html";
+    location.href="Courses.html";
 }
 function home()
 {

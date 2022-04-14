@@ -237,6 +237,7 @@ h2{
 .about{
     font-size: 1.1rem;
     width:90%;
+    text-align: center;
     margin: auto;
     line-height: 1.4rem;
     font-family: 'Open Sans', sans-serif;
@@ -275,7 +276,7 @@ button{
     font-size: 1rem;
 }
 .social{
-    width:25em;
+    width:40%;
     margin:auto;    
 }
 .social ul{
@@ -409,5 +410,8 @@ button{
         position: absolute;
         top:20%;
         right:10px;
+    }
+    .social{
+        width:100%;
     }
 }

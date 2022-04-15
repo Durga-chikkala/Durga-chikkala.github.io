@@ -55,7 +55,7 @@ p{
     
     width:90%;
     height:80%;
-    margin:10px;
+    margin:auto;
     box-sizing: border-box;
     box-shadow: 10px 10px 20px #ccc,
                  -10px -10px 20px #fff;
@@ -106,7 +106,7 @@ h2{
     text-align: center;
 }
 
-}
+
 @media (max-width:480px) {
     .container{
         width: 90%;

@@ -110,6 +110,7 @@ h2{
 @media (max-width:480px) {
     .container{
         width: 90%;
+        text-align: justify;
     }
     .imgg{
         height:40vh;

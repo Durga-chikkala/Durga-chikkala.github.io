@@ -1,5 +1,6 @@
 function profile()
 {
+    alert("This is still in the development phase");
     location.href="profile.html";
 }
 function ai()
@@ -16,6 +17,7 @@ function home()
 }
 function Dashboard()
 {
+    alert("This is still in the development phase");
     location.href="dashboard.html";
 }
 function ds()

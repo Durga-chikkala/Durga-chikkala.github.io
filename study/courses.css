@@ -164,7 +164,7 @@ h2{
 .row .column:hover
 {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 .button-30 {
   align-items: center;
@@ -222,7 +222,7 @@ h2{
     left:0px;
     color:white;
     font-size: 1rem;
-    background: linear-gradient(to left,rgb(192, 49, 73),rgb(171, 10, 37));
+    background: linear-gradient(to left,rgb(18, 183, 220),rgb(8, 183, 222));
 
 }
 .additional{
@@ -237,7 +237,7 @@ h2{
 .about{
     font-size: 1.1rem;
     width:90%;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     line-height: 1.4rem;
     font-family: 'Open Sans', sans-serif;
@@ -245,18 +245,18 @@ h2{
 .query{
     width:90%;
     margin:auto;
+    display: grid;
+    justify-content: center;
 
 }
 input{
-
-    width:80%;
+    width:100%;
     border-top: none;
     border-bottom:2px solid black;
     border-left:none;
     border-right: none;
     outline: none;  
-    font-size: 1rem;
-    
+    font-size: 1rem;  
 }
 input::placeholder{
     text-align: center;
@@ -265,9 +265,9 @@ input::placeholder{
     font-family: 'Marcellus', serif;
 }
 button{
-    width:10%;
+    width:120px;
     height:40px;
-    background: linear-gradient(to left,rgb(142, 47, 63),rgb(185, 23, 50),rgb(239, 5, 44));
+    background: linear-gradient(to left,rgb(32, 142, 211),rgb(23, 185, 171),rgb(29, 168, 196));
     outline: none;
     color:white;
     font-weight: bold;
@@ -298,7 +298,6 @@ button{
     border-radius: 50%;
     cursor:pointer;
 }
-
 .fas,.fab{
     font-size: 2em;
     border-radius: 50%;
@@ -351,8 +350,7 @@ button{
         transform: translateX(-50%);
         grid-template-columns:repeat(2 ,1fr);
         grid-template-rows:12rem 12rem ;
-        background-color: white;
-        
+        background-color: white;        
     }
     .lamp{
         width:50%;
@@ -377,7 +375,6 @@ button{
         grid-template-columns: 100%;
         grid-template-rows:70vh 20vh 65% 45% 35% 35% 35% 35% 35% 35% 40%;
     }
-    
     .row{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,13rem);
@@ -413,5 +410,9 @@ button{
     }
     .social{
         width:100%;
+    }
+    button{
+        width:80px;
+        
     }
 }

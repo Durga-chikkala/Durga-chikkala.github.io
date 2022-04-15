@@ -169,14 +169,12 @@ section h2{
    position:absolute;
    top:10%;
    left:0%;
-
 }
 .quotescontent:nth-child(2)
 {
    position:absolute;
    top:30%;
    right:0%;
-
 }
 .quotescontent:nth-child(3){
    position:absolute;
@@ -232,7 +230,6 @@ section h2{
 footer{
     margin-top:3rem;
     text-align: center;
-
 }
 footer h2{
     margin-bottom:3rem;
@@ -356,5 +353,8 @@ button{
     }
     .social{
         width:90%;
+    }
+    button{
+        width:80px;
     }
 }

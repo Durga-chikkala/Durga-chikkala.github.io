@@ -273,7 +273,7 @@ button{
     font-size: 1rem;
 }
 .social{
-    width:25em;
+    width:25%;
     margin:auto;    
 }
 .social ul{
@@ -353,5 +353,8 @@ button{
     }
     .img1{
         display: none;
+    }
+    .social{
+        width:90%;
     }
 }

@@ -238,6 +238,7 @@ footer h2{
     font-size: 1.1rem;
     width:90%;
     margin:auto;
+    text-align: justify;
     line-height: 2rem;
     font-family: 'Open Sans', sans-serif;
 }

@@ -327,6 +327,10 @@ button{
     display: none;
 }
 @media (max-width:500px){
+    .image{
+        left:50%;
+        transform: translateX(-50%);
+    }
     .row .column{
         height:15vh;
         width:30vw;
@@ -357,5 +361,8 @@ button{
     }
     button{
         width:80px;
+    }
+    nav{
+        
     }
 }

@@ -354,11 +354,13 @@ button{
         font-size: 16px;
     }
     .grid-main{
+       
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows:600px 200px 600px repeat(1,550px) repeat(5,450px) 440px;
     }
-    .row{
+
+    .row{ 
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,14rem);
@@ -368,7 +370,7 @@ button{
     }
     .additional{
         width:60%;
-        margin:0px;
+        margin:auto;
         position: absolute;
         left:50%;
         transform: translateX(-50%);

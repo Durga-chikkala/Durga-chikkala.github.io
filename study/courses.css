@@ -212,7 +212,7 @@ h2{
   transform: translateY(-2px);
 }
 .days{
-    background-color: #e72618;
+    background-color: blue;
 }
 .days h4{
     animation: blink 1s infinite ease-in;

@@ -40,7 +40,7 @@ body{
    left:-0.5em;
    bottom:1em;
    animation:bounce 3s infinite ease-out,rotate 3s infinite linear reverse;
-   background-image: radial-gradient(circle at top ,lightblue,  #000);
+   background-image: radial-gradient(circle at top ,lightyellow,  #000);
   
 
 }
